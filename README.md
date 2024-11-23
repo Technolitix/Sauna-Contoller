@@ -1,6 +1,6 @@
 # Sauna Controller
 
-![Sauna Controller](pictures/controller_image.png)
+![Sauna Controller](pictures/controller_image.PNG)
 
 A project for controlling a sauna using sensors and actuators. This application allows precise management of temperature, humidity, and other parameters to ensure an optimal sauna experience.
 
