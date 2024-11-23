@@ -1,0 +1,49 @@
+title: Home
+views:
+  - title: Sauna
+    path: sauna
+    icon: mdi:greenhouse
+    cards:
+      - type: thermostat
+        entity: climate.sauna1_sauna
+        features:
+          - type: climate-hvac-modes
+      - type: entities
+        entities:
+          - entity: switch.sauna1_display_ein_aus
+          - entity: switch.sauna1_volllast
+          - entity: switch.sauna1_sauna_schalter
+          - entity: switch.sauna1_licht_innen
+          - entity: switch.sauna1_licht_t_re
+          - entity: switch.sauna1_licht_aussen
+          - entity: button.sauna1_play_module
+          - entity: button.sauna1_stop
+          - entity: button.sauna1_sauna_runterfahren
+          - entity: button.sauna1_sauna_neustart
+          - entity: binary_sensor.sauna1_sauna_t_r
+          - entity: binary_sensor.sauna1_thermosicherung
+          - entity: number.sauna1_nsp_room_brightness
+      - type: entities
+        entities:
+          - entity: sensor.sauna1_ziel_temperatur
+          - entity: sensor.sauna1_median_temperature
+          - entity: sensor.sauna1_sauna_temperatur_direkt_in_der_sauna
+          - entity: sensor.sauna1_sauna_temperatur_an_der_bank
+          - entity: sensor.sauna1_sauna_temperatur_in_sauna_steuerung
+          - entity: sensor.sauna1_wifi_signal_sensor
+          - entity: device_tracker.sauna_2
+          - entity: binary_sensor.sauna1_sauna_bereit
+      - type: custom:button-card
+        name: Upload Sauna Display Firmware
+        tap_action:
+          action: call-service
+          service: esphome.sauna1_upload_tft
+      - type: entities
+        entities:
+          - entity: input_datetime.sauna_zeitschaltuhr
+          - entity: input_number.sauna_zieltemperatur
+      - type: custom:button-card
+        name: Upload Sauna Testgerät Display Firmware
+        tap_action:
+          action: call-service
+          service: esphome.sauna_testgerat_upload_tft

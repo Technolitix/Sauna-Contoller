@@ -1,0 +1,990 @@
+substitutions:
+  #statics
+  standard_target_temp_high: "85°C"
+  standard_target_temp_low: "80°C"
+  max_power_generic: "1.0"
+  #power of the sauna oven (kw dividet 100)
+  power_of_sauna_oven: "0.108"
+  uart_baud_rate: "115200"
+  oven_sensor_addr: "0x4a00000032a8ad28"
+  bank_sensor_addr: "0xc3000000329d3f28"
+  electric_box_sensor_addr: "0xea000000306fe528"
+
+  #I/O-Pins
+  rx_pin: "GPIO1"
+  tx_pin: "GPIO20"
+  sda_pin: "GPIO9"  
+  scl_pin: "GPIO10"
+  dallas_pin: "GPIO6"
+  mcp23017_reset_pin: "GPIO8"
+  sclk_pin: "GPIO2"
+  miso_pin: "GPIO3"
+  mosi_pin: "GPIO4"
+  sccn_pin: "GPIO7"
+  relay_1: "0"
+  relay_2: "1"
+  relay_3: "2"
+  relay_4: "3"
+  relay_5: "4"
+  led_1: "8"
+  led_2: "7"
+  led_3: "6"
+  led_4: "5"
+  ws2812_pin: "GPIO0"
+  thermal_fuse1_pin: "10"
+  door_sensor1_pin: "11"
+  thermal_fuse2_pin: "12"
+  beeper1_pin: "GPIO21"
+
+
+esphome:
+  name: sauna1
+  friendly_name: Sauna
+  platformio_options:
+    board_build.flash_mode: dio
+  on_boot:
+    priority: -100
+    then:
+      - output.turn_off: heating_element_1
+      - output.turn_off: heating_element_2
+      - output.turn_off: heating_element_3
+      - climate.control:
+          id: sauna_climate
+          mode: 'OFF'
+          target_temperature_high: ${standard_target_temp_high}
+          target_temperature_low: ${standard_target_temp_low}
+      - globals.set:
+          id: loading_screen
+          value: 'false'
+
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: arduino
+
+# Enable logging
+logger: 
+  baud_rate: 0
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret api_key_sauna
+  services:
+    - service: upload_tft
+      then:
+        - lambda: "id(nextion1)->upload_tft();"
+
+ota:
+  - platform: esphome
+    password: !secret ota_key_sauna
+
+wifi:
+  ssid: !secret wifi_ssid_sauna
+  password: !secret wifi_password_sauna
+
+# Example configuration entry for SPI chips
+#ethernet:
+#  type: W5500
+#  clk_pin: GPIO2
+#  mosi_pin: GPIO4
+#  miso_pin: GPIO3
+#  cs_pin: GPIO7
+#interrupt_pin: "16"
+#reset_pin: "15"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Sauna1 Fallback Hotspot"
+    password: !secret fallback_hotspot_pw_sauna
+
+uart:
+  id: nextion1_uart
+  rx_pin: ${rx_pin}
+  tx_pin: ${tx_pin}
+  baud_rate: ${uart_baud_rate}
+
+i2c:
+  sda: ${sda_pin}
+  scl: ${scl_pin}
+  scan: True
+
+mcp23017:
+  - id: 'mcp23017_hub'
+    address: 0x27
+
+globals:
+  - id: count_global_int
+    type: int
+    restore_value: false
+    initial_value: '0'
+
+  - id: count_global_door_int
+    type: int
+    restore_value: false
+    initial_value: '0'
+
+  - id: count_global_set_val
+    type: int
+    restore_value: true
+    initial_value: '90'
+
+  - id: count_global_door_set_val
+    type: int
+    restore_value: true
+    initial_value: '99999999'
+
+  - id: current_element
+    type: int
+    restore_value: no
+    initial_value: '0'
+
+  - id: full_power_mode
+    type: int
+    restore_value: no
+    initial_value: '1'
+
+  - id: default_target_temperature
+    type: int
+    restore_value: no
+    initial_value: '0'
+
+  - id: sauna_on_off
+    type: bool
+    restore_value: no
+    initial_value: '0'
+
+#Sauna Lichter
+  - id: sauna_light
+    type: bool
+    restore_value: no
+    initial_value: '0'
+  - id: outdoor_light
+    type: bool
+    restore_value: no
+    initial_value: '0'
+
+  - id: sauna_light_led1
+    type: bool
+    restore_value: no
+    initial_value: '0'
+  - id: sauna_light_led2
+    type: bool
+    restore_value: no
+    initial_value: '0'
+  - id: sauna_light_led3
+    type: bool
+    restore_value: no
+    initial_value: '0'
+  - id: sauna_light_led4
+    type: bool
+    restore_value: no
+    initial_value: '0'
+
+  - id: display_wake
+    type: bool
+    restore_value: no
+    initial_value: '0'
+  - id: loading_screen
+    type: bool
+    restore_value: no
+    initial_value: '0'
+
+  - id: thermal_fuse_state
+    type: bool
+    restore_value: no
+    initial_value: '0'
+
+  - id: set_temp_standart_value
+    type: int
+    restore_value: no
+    initial_value: '0'
+
+
+# Change heat elements 
+interval:
+  - interval: 5s
+    then:
+      - lambda: |-
+          if (!id(full_power_mode)) {
+          id(current_element) = (id(current_element) + 1) % 3;
+          //ESP_LOGD("main", "Current element: %d", id(current_element));
+          }
+
+rtttl:
+  output: rtttl_out
+
+output:
+
+  - platform: ledc
+    pin: ${beeper1_pin} 
+    id: rtttl_out
+    inverted: True
+    frequency: 10000 Hz
+
+  - platform: gpio
+    pin: 
+      mcp23xxx: mcp23017_hub
+      number: ${relay_1} 
+      mode: 
+        output: true
+      inverted: true
+    id: heating_element_1
+
+  - platform: gpio
+    pin: 
+      mcp23xxx: mcp23017_hub 
+      number: ${relay_2} 
+      mode: 
+        output: true
+      inverted: true
+    id: heating_element_2
+
+  - platform: gpio
+    pin: 
+      mcp23xxx: mcp23017_hub 
+      number: ${relay_3}
+      mode: 
+        output: true
+      inverted: true
+    id: heating_element_3
+
+button:
+  - platform: restart
+    name: "Sauna Neustart"
+    id: restart_button
+
+  - platform: shutdown
+    name: "Sauna runterfahren"
+
+  - platform: safe_mode
+    name: "Safe Mode"
+
+
+  - platform: template
+    name: "Play Module!"
+    on_press:
+      then:
+      - output.set_level:
+          id: rtttl_out
+          level: "100%"
+      - rtttl.play: "Cat:d=16,o=6,b=95:32d,32d#,32d,32d#"
+
+
+  - platform: template
+    name: "Stop !"  
+    on_press:
+      then:
+        - rtttl.stop
+
+      
+
+switch:
+  - platform: gpio
+    id: mcp23017_reset
+    pin:
+      number: ${mcp23017_reset_pin}
+      inverted: true
+
+  - platform: gpio
+    id: aussenbeleuchtung
+    pin:
+      mcp23xxx: mcp23017_hub 
+      number: ${relay_5}
+      mode:  
+        output: true
+      inverted: false
+
+  - platform: gpio
+    id: led1
+    pin:
+      mcp23xxx: mcp23017_hub 
+      number: ${led_1}
+      mode:  
+        output: true
+      inverted: false
+  - platform: gpio
+    id: led2
+    pin:
+      mcp23xxx: mcp23017_hub 
+      number: ${led_2}
+      mode:  
+        output: true
+      inverted: true
+  - platform: gpio
+    id: led3
+    pin:
+      mcp23xxx: mcp23017_hub 
+      number: ${led_3}
+      mode:  
+        output: true
+      inverted: true
+  - platform: gpio
+    id: led4
+    pin:
+      mcp23xxx: mcp23017_hub 
+      number: ${led_4}
+      mode:  
+        output: true
+      inverted: true
+
+
+  - platform: gpio
+    pin: 
+      mcp23xxx: mcp23017_hub 
+      number: ${relay_4}
+      mode: 
+        output: true
+      inverted: false
+    id: sauna_licht
+
+  - platform: template
+    name: Volllast
+    id: full_power_mode_switch
+    restore_mode: ALWAYS_ON 
+    lambda: |-
+      return id(full_power_mode);
+    turn_on_action:
+      - lambda: |-
+          id(full_power_mode) = true;
+    turn_off_action:
+      - lambda: |-
+          id(full_power_mode) = false;
+
+  - platform: template
+    name: Sauna Schalter
+    id: sauna_on_off_switch
+    lambda: |-
+      return id(sauna_on_off);
+    turn_on_action:
+      - lambda: |-
+          id(sauna_on_off) = true;
+          auto call = id(sauna_climate).make_call();
+          call.set_mode("HEAT");
+          call.perform();
+    turn_off_action:
+      - lambda: |-
+          id(sauna_on_off) = false;
+          auto call = id(sauna_climate).make_call();
+          call.set_mode("OFF");
+          call.perform();
+
+  - platform: template
+    name: Licht Innen
+    id: light_sw_light
+    lambda: |-
+      return id(sauna_light);
+    turn_on_action:
+      - lambda: |-
+          id(sauna_light) = true;
+          id(sauna_licht).turn_on();
+          
+    turn_off_action:
+      - lambda: |-
+          id(sauna_light) = false;
+          id(sauna_licht).turn_off();
+
+
+  - platform: template
+    name: Licht Aussen
+    id: light_sw_outdoor_light
+    lambda: |-
+      return id(outdoor_light);
+    turn_on_action:
+      - lambda: |-
+          id(outdoor_light) = true;
+          id(aussenbeleuchtung).turn_on();
+    turn_off_action:
+      - lambda: |-
+          id(outdoor_light) = false;
+          id(aussenbeleuchtung).turn_off();
+
+
+  - platform: template
+    name: Licht Türe
+    id: light_sw_led1
+    lambda: |-
+      return id(sauna_light_led1);
+    turn_on_action:
+      - lambda: |-
+          id(sauna_light_led1) = true;
+          //id(nextion1).send_command_printf("p3.pic=27");  // Sending the formatted text
+          id(led1).turn_on();
+    turn_off_action:
+      - lambda: |-
+          id(sauna_light_led1) = false;
+          //id(nextion1).send_command_printf("p3.pic=28");  // Sending the formatted text
+          id(led1).turn_off();
+
+  - platform: template
+    name: Licht Türe
+    id: light_sw_led2
+    lambda: |-
+      return id(sauna_light_led2);
+    turn_on_action:
+      - lambda: |-
+          id(sauna_light_led2) = true;
+          id(led2).turn_on();
+    turn_off_action:
+      - lambda: |-
+          id(sauna_light_led2) = false;
+          id(led2).turn_off();
+
+  - platform: template
+    name: Licht Türe
+    id: light_sw_led3
+    lambda: |-
+      return id(sauna_light_led3);
+    turn_on_action:
+      - lambda: |-
+          id(sauna_light_led3) = true;
+          id(led3).turn_on();
+    turn_off_action:
+      - lambda: |-
+          id(sauna_light_led3) = false;
+          id(led3).turn_off();
+
+  - platform: template
+    name: Licht Türe
+    id: light_sw_led4
+    lambda: |-
+      return id(sauna_light_led4);
+    turn_on_action:
+      - lambda: |-
+          id(sauna_light_led4) = true;
+          id(led4).turn_on();
+    turn_off_action:
+      - lambda: |-
+          id(sauna_light_led4) = false;
+          id(led4).turn_off();
+
+
+  - platform: template
+    name: Display Ein/Aus
+    id: display_on_off
+    restore_mode: ALWAYS_ON
+    lambda: |-
+      return id(display_wake);
+    turn_on_action:
+      - lambda: |-
+          id(display_wake) = true;
+    turn_off_action:
+      - lambda: |-
+          id(display_wake) = false;
+
+      
+
+
+one_wire:
+  - platform: gpio
+    pin: ${dallas_pin}
+
+# Individual sensors
+sensor:
+  - platform: dallas_temp
+    address: ${oven_sensor_addr} #Sensor on the seeling near by oven
+    name: Sauna Temperatur direkt in der Sauna
+    id: oven_temp
+    update_interval: 5s
+    on_value:
+      then:
+        - lambda: |-
+            char buffer[32];
+            sprintf(buffer, "%.1f C", id(oven_temp).state);  // Formatting the text
+            id(txt_oven_temp_id).set_state(buffer, false, true);  // Sending the formatted text
+      
+  - platform: dallas_temp
+    address: ${electric_box_sensor_addr} #in the electronic at the SSR Relais
+    name: Sauna Temperatur in Sauna Steuerung
+    update_interval: 5s
+    id: electric_box_temp
+    on_value:
+      then:
+        - lambda: |-
+            char buffer[32];
+            sprintf(buffer, "%.1f C", id(electric_box_temp).state);  // Formatting the text
+            id(txt_box_temp_id).set_state(buffer, false, true);  // Sending the formatted text
+
+  - platform: dallas_temp
+    address: ${bank_sensor_addr} #at a bench
+    name: Sauna Temperatur an der Bank
+    id: bank_temp
+    update_interval: 5s
+    on_value:
+      then:
+        - lambda: |-
+            char buffer[32];
+            sprintf(buffer, "%.1f C", id(bank_temp).state);  // Formatting the text
+            id(txt_bank_temp_id).set_state(buffer, false, true);  // Sending the formatted text
+
+  - platform: combination
+    type: median
+    name: "Median Temperature"
+    id: median_temp_sauna
+    sources:
+      - source: oven_temp
+      - source: bank_temp
+
+
+
+
+  - platform: wifi_signal
+    name: WiFi Signal Sensor
+    update_interval: 60s
+
+  - platform: template
+    name: Zählerwert Sauna aus
+    id: global_counter_val
+    update_interval: 1min
+    lambda: |-
+      return (id(count_global_int));
+
+  - platform: template
+    name: Zählerwert Tür offen
+    id: count_global_door_counter_val
+    update_interval: 1min
+    lambda: |-
+      return (id(count_global_door_int));
+
+  - platform: homeassistant
+    id: power_kwTTTTTT
+    entity_id: sensor.easymeter_strom_watt_summe
+    device_class: power
+    filters: 
+      - multiply: 
+          0.001
+
+  - platform: homeassistant
+    id: set_temp_standart
+    entity_id: "input_number.sauna_zieltemperatur"
+    on_value:
+      lambda: |- 
+        id(set_temp_standart_value) = id(set_temp_standart).state;
+        
+
+  - platform: nextion
+    nextion_id: nextion1
+    name: "Ziel Temperatur"
+    id: ziel_temp
+    variable_name: set_temp
+    device_class: temperature
+    on_value:
+      then:
+        - lambda: |-
+            auto call = id(sauna_climate).make_call();
+            call.set_target_temperature_high(id(ziel_temp).state);
+            call.perform();
+
+binary_sensor:
+
+  - platform: gpio #reed contact at the door -> resets a timer not really needed
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: ${door_sensor1_pin}
+      mode: 
+        input: true
+        pullup: true
+      inverted: True
+    name: Sauna Tür
+    device_class: "door"
+    id: door_sensor
+    filters:
+      - delayed_on_off: 100ms
+    on_release:
+      then:
+          - lambda: |-
+              id(count_global_int)=0;
+
+  - platform: gpio #reed contact at the door -> resets a timer not really needed
+    pin:
+      mcp23xxx: mcp23017_hub
+      number: ${thermal_fuse1_pin}
+      mode: 
+        input: true
+        pullup: true
+    name: Thermosicherung
+    device_class: "vibration"
+    id: thermal_fuse
+    filters:
+      - delayed_on_off: 100ms
+    on_state:
+      then:
+          - lambda: |-
+              if(id(thermal_fuse_state)){
+              }
+              else{
+              auto call = id(sauna_climate).make_call();
+              call.set_mode("OFF");
+              call.perform();
+              }
+
+  - platform: template #switch on if sauna reaches target temperatur
+    name: Sauna bereit
+    device_class: "heat"
+    id: sauna_ready
+
+  - platform: template #switch on if sauna reaches target temperatur
+    name: Sauna aus
+    device_class: "heat"
+    id: sauna_is_off
+    on_state: 
+      then:
+        - lambda: |-
+            if(id(sauna_climate).mode == 0){
+            id(sauna_on_off) = false;
+            }
+            else{
+            id(sauna_on_off) = true;
+            }       
+
+
+  - platform: status
+    name: Sauna
+
+  - platform: nextion
+    page_id: 0
+    id: p0
+    component_id: 9
+    on_press:
+      then:
+        - lambda: |-
+            if(id(sauna_light) == 1){
+            id(sauna_light) = false;
+            id(sauna_licht).turn_off();
+            }
+            else{
+            id(sauna_light) = true;
+            id(sauna_licht).turn_on();
+            }
+  - platform: nextion
+    page_id: 0
+    id: p5
+    component_id: 16
+    on_press:
+      then:
+        - lambda: |-
+            if(id(outdoor_light) == 1){
+            id(outdoor_light) = false;
+            id(aussenbeleuchtung).turn_off();
+            }
+            else{
+            id(outdoor_light) = true;
+            id(aussenbeleuchtung).turn_on();
+            }
+
+
+  - platform: nextion
+    page_id: 0
+    id: p3
+    component_id: 15
+    on_press:
+      then:
+        - lambda: |-
+            if(id(sauna_light_led1) == 1){
+            id(sauna_light_led1) = false;
+            id(led1).turn_off();
+            }
+            else{
+            id(sauna_light_led1) = true;
+            id(led1).turn_on();
+            }
+            
+  - platform: nextion
+    page_id: 5
+    id: p6
+    component_id: 6
+    on_press:
+      then:
+        - button.press: restart_button
+
+
+
+ 
+  - platform: nextion
+    page_id: 0
+    id: p1
+    component_id: 10
+    on_press:
+      then:
+        - lambda: |-
+            if(id(full_power_mode)){
+            id(full_power_mode) = false;
+            if(id(sauna_on_off)){
+            auto call = id(sauna_climate).make_call();
+            call.set_mode("OFF");
+            call.perform();
+            delay(100);
+            call.set_mode("HEAT");
+            call.perform(); 
+            }
+
+            }
+            else{
+            id(full_power_mode) = true;
+            if(id(sauna_on_off)){
+            auto call = id(sauna_climate).make_call();
+            call.set_mode("OFF");
+            call.perform();
+            delay(100);
+            call.set_mode("HEAT");
+            call.perform(); 
+            }
+            }
+
+  - platform: nextion
+    page_id: 0
+    id: p2
+    component_id: 11
+    on_press:
+      then:
+        - lambda: |-
+            if(id(sauna_on_off) == 1){
+            id(sauna_on_off) = false;
+            auto call = id(sauna_climate).make_call();
+            call.set_mode("OFF");
+            call.perform();
+            }
+            else{
+            id(sauna_on_off) = true;
+            auto call = id(sauna_climate).make_call();
+            call.set_mode("HEAT");
+            call.perform();
+            }
+       
+
+# Example configuration entry
+climate:
+  - platform: bang_bang
+    name: "Sauna"
+    id: sauna_climate
+    sensor: oven_temp
+    default_target_temperature_low: 80 °C
+    default_target_temperature_high: 85 °C
+
+    heat_action:
+      - output.turn_on: heating_element_1
+      - output.turn_on: heating_element_2
+      - output.turn_on: heating_element_3
+    idle_action:
+      - output.turn_off: heating_element_1
+      - output.turn_off: heating_element_2
+      - output.turn_off: heating_element_3
+
+    visual:
+      min_temperature: 10 °C
+      max_temperature: 100 °C
+      temperature_step: 1 °C
+
+
+
+# Display Brightness Slider for HA
+number:
+  platform: template
+  name: NSP ${room} brightness
+  id: brightness
+  update_interval: never
+  entity_category: config
+  unit_of_measurement: "%"
+  optimistic: true
+  min_value: 0
+  max_value: 100
+  step: 10
+  initial_value: 20
+  on_value:
+    - lambda: "id(nextion1).set_backlight_brightness(x/100);"
+
+
+text_sensor:
+  - platform: homeassistant
+    id: power_kw
+    entity_id: sensor.easymeter_strom_watt_summe
+    on_value:
+      then:
+        - lambda: |-
+            char buffer[32];
+            sprintf(buffer, "POW: %.2f kW", id(power_kw).state);  // Formatting the text
+            id(pow_usage_kw_id).set_state(buffer, false, true);  // Sending the formatted text
+
+  - platform: nextion
+    nextion_id: nextion1
+    id: pow_usage_kw_id
+    component_name: page0.pow_usage_kw
+
+  - platform: nextion
+    nextion_id: nextion1
+    id: txt_bank_temp_id
+    component_name: page0.txt_bank_temp
+
+  - platform: nextion
+    nextion_id: nextion1
+    id: txt_oven_temp_id
+    component_name: page0.txt_oven_temp
+
+  - platform: nextion
+    nextion_id: nextion1
+    id: txt_box_temp_id
+    component_name: page3.tfuse1_state
+
+##################################
+display:
+  - platform: nextion
+    id: nextion1
+    uart_id: nextion1_uart
+    tft_url: http://192.168.1.50:8123/local/nextion_displays/Sauna-Display.tft
+    touch_sleep_timeout: 300
+    auto_wake_on_touch: true
+    update_interval: 250ms
+    lambda: |-
+     if(id(loading_screen) == false){
+     //id(nextion1).goto_page("page0");
+     id(loading_screen) = true;
+     }
+     //it.set_component_text_printf("txt_oven_temp", "%.0f C", id(oven_temp).state);  
+     //it.set_component_text_printf("txt_bank_temp", "%.0f C", id(bank_temp).state);
+     //it.set_component_text_printf("tfuse1_state", "Box Temp: %.0f C", id(electric_box_temp).state);
+     it.set_component_text_printf("txt_set_temp", "Ziel Temp: %.0fC", id(sauna_climate).target_temperature_high);
+     //it.set_component_text_printf("pow_usage_kw", "Verbrauch %.1fkw", id(power_kw).state);
+     //it.set_component_text_printf("pow_usage_kwh", "Verbrauch %.1fkw", id(power_kw).state);
+     //it.set_component_text_printf("l1_relay_state", "Heizelement 1: %.0f", id(heating_element_1));
+     //it.set_component_text_printf("l2_relay_state", "Heizelement 2: %.0f", id(heating_element_2));
+     //it.set_component_text_printf("l3_relay_state", "Heizelement 3: %.0f", id(heating_element_3));
+     //it.set_component_text_printf("light1_state", "Saunalicht innen: %.0f",  id(sauna_light));
+     //it.set_component_value("n0", id(set_temp_standart_value));
+     
+
+     //it.set_component_value("set_temp", id(sauna_climate).target_temperature);
+
+     if(id(sauna_light_led1) == true){
+     it.send_command_printf("p3.pic=27");
+     }
+     else{
+     it.send_command_printf("p3.pic=28");
+     }
+
+     if(id(sauna_light) == true){
+     it.send_command_printf("p0.pic=3");
+     }
+     else{
+     it.send_command_printf("p0.pic=4");
+     }
+
+     if(id(outdoor_light) == true){
+     it.send_command_printf("p5.pic=3");
+     }
+     else{
+     it.send_command_printf("p5.pic=4");
+     }
+
+
+     if(id(full_power_mode) == true){
+     it.send_command_printf("p1.pic=1");
+     }
+     else{
+     it.send_command_printf("p1.pic=2");
+     }
+
+     if(id(sauna_on_off) == true){
+     it.send_command_printf("p2.pic=0");
+     }
+     else{
+     it.send_command_printf("p2.pic=5");
+     }
+
+     if(id(sauna_climate).mode != 0){
+     it.set_component_value("va0", 1);
+     }
+     else{
+     it.set_component_value("va0", 0);
+     }
+     if(id(oven_temp).state >= 19){
+     it.set_component_value("bolt_val", 1);
+     }
+     else{
+     it.set_component_value("bolt_val", 0);
+     }
+
+#################################
+light:
+  - platform: neopixelbus #fancy lamp for sauna
+    variant: WS2812
+    type: GRB
+    pin: ${ws2812_pin}
+    num_leds: 133
+    name: Sauna Licht WS2812
+    id: sauna_licht_ws2812
+    effects:
+      - random:
+      - strobe:
+      - addressable_rainbow:
+      - addressable_twinkle:
+      - addressable_color_wipe:
+      - addressable_scan:
+      - addressable_twinkle:
+          name: Twinkle Effect With Custom Values
+          twinkle_probability: 15%
+          progress_interval: 4ms
+      - addressable_random_twinkle:
+      - addressable_fireworks:
+      - addressable_fireworks:
+          name: Fireworks Effect With Custom Values
+          update_interval: 32ms
+          spark_probability: 40%
+          use_random_color: false
+          fade_out_rate: 120
+
+#every minute a event is fired, to switch the Sauna off after 90min without opening the door
+#If the door is open for more than 5min switch off the sauna
+time:
+  - platform: homeassistant
+    id: homeassistant_time
+
+  - platform: sntp
+    # ...
+    on_time:
+      - seconds: 0
+        minutes: 0
+        hours: 18
+        days_of_week: 1-7
+        then:
+          - switch.turn_on: aussenbeleuchtung
+      - seconds: 0
+        minutes: 0
+        hours: 23
+        days_of_week: 1-7
+        then:
+          - switch.turn_off: aussenbeleuchtung
+      # Every minute
+      - seconds: 0
+        minutes: /1
+        then:
+          - lambda: |-
+              if (id(sauna_climate).mode==climate::CLIMATE_MODE_OFF) {
+                id(count_global_int)=0;
+                id(sauna_ready).publish_state(false);
+              }else{
+                id(count_global_int)++;
+                if (!id(door_sensor).state) {
+                  id(count_global_door_int)=0;
+                }else{
+                  //If the door is open for more than 5min switch off the sauna
+                  id(count_global_door_int)++;
+                  if (id(count_global_door_int)> id(count_global_door_set_val)){
+                    //auto call = id(sauna_climate).make_call();
+                    //call.set_mode("OFF");
+                    //call.perform();
+                  }
+                }
+                if (id(sauna_climate).current_temperature > id(sauna_climate).target_temperature){
+                  //reset the timer after reaching the target temperature
+                  if (id(sauna_ready).state==false){
+                    id(count_global_int)=0;
+                  }
+                  id(sauna_ready).publish_state(true);
+                }
+              }
+              if (id(count_global_int) > id(count_global_set_val)){
+                //auto call = id(sauna_climate).make_call();
+                //call.set_mode("OFF");
+                //call.perform();
+              }        
