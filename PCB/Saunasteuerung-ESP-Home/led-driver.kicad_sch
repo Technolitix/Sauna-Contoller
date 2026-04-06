@@ -5,6 +5,145 @@
 	(uuid "a29932cc-7174-4e1d-aa48-7f02561fae40")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -289,6 +428,192 @@
 					(at 0 -2.54 90)
 					(length 0.762)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -802,7 +1127,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:IRLZ34N"
+		(symbol "Transistor_FET:BSS214NW"
 			(pin_names
 				(hide yes)
 			)
@@ -818,7 +1143,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "IRLZ34N"
+			(property "Value" "BSS214NW"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -827,7 +1152,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -838,7 +1163,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720"
+			(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -848,7 +1173,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"
+			(property "Description" "20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323"
 				(at 0 0 0)
 				(effects
 					(font
@@ -857,7 +1182,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "N-Channel HEXFET MOSFET Logic-Level"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -866,7 +1191,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?220*"
+			(property "ki_fp_filters" "SOT?323*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -875,7 +1200,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "IRLZ34N_0_1"
+			(symbol "BSS214NW_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -1042,8 +1367,306 @@
 					)
 				)
 			)
-			(symbol "IRLZ34N_1_1"
+			(symbol "BSS214NW_1_1"
 				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Transistor_FET:STD7NK40Z"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "STD7NK40Z"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/std7nk40zt4.pdf"
+				(at 5.08 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "5.4A Id, 400V Vds, N-Channel MOSFET, 1Ohm Ron, DPAK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "N-Channel MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?252*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "STD7NK40Z_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905) (xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508) (xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "STD7NK40Z_1_1"
+				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "G"
@@ -1090,6 +1713,432 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "WS2811:WS2811"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at -7.62 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "WS2811"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Footprint" "WS2811:SO08-SKINNYPADS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Adafruit"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "IC: driver; LED controller; MSOP8; 6÷7VDC; PWM; WS28XX"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/WS2811/Adafruit+Industries/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "WS2811"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/WS2811/Adafruit+Industries/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "WS2811_0_0"
+				(rectangle
+					(start -7.62 -5.08)
+					(end 7.62 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "WS2811"
+					(at 7.62 10.16 0)
+					(effects
+						(font
+							(size 1.778 1.778)
+						)
+						(justify right top)
+					)
+				)
+				(pin open_collector line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "R"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "G"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "B"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -2.54 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 5.08 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "SET"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -2.54 180)
+					(length 5.08)
+					(name "DO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1202,9 +2251,207 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 148.59 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "007f5919-d684-46a9-9f3b-d3f2764c0fb4")
+	)
+	(junction
+		(at 193.04 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fa61cef-3328-46d0-97a0-ef4aafadef84")
+	)
+	(junction
+		(at 109.22 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "160237c5-652b-42a4-a00c-ec1f792c8e2f")
+	)
+	(junction
+		(at 105.41 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b27c4b2-a101-42da-b650-629f19f04dec")
+	)
+	(junction
+		(at 58.42 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d33e0fd-998b-4f46-a1fa-decd3ac34958")
+	)
+	(junction
+		(at 105.41 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "336d97ab-47a3-49c8-aeeb-b62e403fcce1")
+	)
+	(junction
+		(at 168.91 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "350e285a-2e5a-4e7d-8148-8a14cfa7249e")
+	)
+	(junction
+		(at 153.67 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37ed0662-b2bb-49d2-80b4-8452ced3b323")
+	)
+	(junction
+		(at 60.96 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3aee72c8-4df1-4822-8a40-e23e6ac806b7")
+	)
+	(junction
+		(at 129.54 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b2ad767-35c8-4343-b37c-3b0bc2d73675")
+	)
+	(junction
+		(at 153.67 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50804150-fb5d-4014-be06-9ceab2abd73a")
+	)
+	(junction
+		(at 114.3 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51426871-7fec-4701-8443-f85571a7bea8")
+	)
+	(junction
+		(at 187.96 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ef0d30d-ff49-4b3a-a904-301af2c9049d")
+	)
+	(junction
+		(at 193.04 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6294852e-94be-4448-9e2d-0429941e24dc")
+	)
+	(junction
+		(at 144.78 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d440019-4205-4d12-84e7-8e9de1685f95")
+	)
+	(junction
+		(at 144.78 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7055636e-b29f-46ed-86d7-7aef56369e38")
+	)
+	(junction
+		(at 105.41 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e0b6c33-e7d4-4ab1-a974-f047f1a7e8ab")
+	)
+	(junction
+		(at 184.15 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86425f2a-0899-47c9-a3b0-00c65985384f")
+	)
+	(junction
+		(at 101.6 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97eec181-0040-4fa7-8217-c25f2e923780")
+	)
+	(junction
+		(at 60.96 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acc3a769-084f-4847-834f-ed782741d42b")
+	)
+	(junction
+		(at 180.34 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b5e1bff5-9b79-4e9e-a086-a9f5fc0d58cb")
+	)
+	(junction
+		(at 114.3 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4f79ede-f96e-488f-90ce-c99fce7916f1")
+	)
+	(junction
+		(at 184.15 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9f2c805-4056-47ab-8b46-1513b59438c0")
+	)
+	(junction
+		(at 140.97 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cba3773d-bbbe-45ff-b905-67c130597758")
+	)
+	(no_connect
+		(at 76.2 116.84)
+		(uuid "6a10a958-7f09-4bf0-aaff-06a3d7a17e3e")
+	)
 	(wire
 		(pts
-			(xy 72.39 81.28) (xy 76.2 81.28)
+			(xy 58.42 109.22) (xy 60.96 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "000e1328-5bd9-46ec-97ec-2bac1bebced4")
+	)
+	(wire
+		(pts
+			(xy 107.95 114.3) (xy 180.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "002ddd38-9377-49ec-b9d0-c75bd26b0fdc")
+	)
+	(wire
+		(pts
+			(xy 140.97 107.95) (xy 140.97 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04425f75-d703-4aae-97d2-fb1bc7b69a1d")
+	)
+	(wire
+		(pts
+			(xy 144.78 78.74) (xy 144.78 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044cb371-aeac-4757-afa0-8ae1a1b2d98c")
+	)
+	(wire
+		(pts
+			(xy 101.6 109.22) (xy 107.95 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08396124-b97a-4aaa-bb80-1d79e846a61f")
+	)
+	(wire
+		(pts
+			(xy 149.86 52.07) (xy 149.86 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1214,7 +2461,27 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 76.2) (xy 72.39 76.2)
+			(xy 58.42 81.28) (xy 58.42 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e5bf612-9117-441e-b592-b4771be9ec36")
+	)
+	(wire
+		(pts
+			(xy 101.6 77.47) (xy 101.6 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "102a4568-8075-4952-b561-a89bc67d5eba")
+	)
+	(wire
+		(pts
+			(xy 144.78 48.26) (xy 144.78 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1224,27 +2491,87 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 81.28) (xy 156.21 81.28)
+			(xy 140.97 111.76) (xy 144.78 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1981307a-c37c-41f0-b924-d130e55f533c")
+		(uuid "13696414-52d9-4337-a5bd-4b901483a7f0")
 	)
 	(wire
 		(pts
-			(xy 152.4 36.83) (xy 156.21 36.83)
+			(xy 107.95 109.22) (xy 107.95 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d5c92f6-f9b0-4649-b4ec-a55716df8553")
+		(uuid "14f4df93-9054-412f-975a-6fd70dcacac5")
 	)
 	(wire
 		(pts
-			(xy 76.2 60.96) (xy 72.39 60.96)
+			(xy 153.67 83.82) (xy 153.67 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16f2bfa0-862d-44c0-9d7f-9f1f97ed835b")
+	)
+	(wire
+		(pts
+			(xy 76.2 114.3) (xy 72.39 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17953c63-c261-4d4b-8eda-d1537443098c")
+	)
+	(wire
+		(pts
+			(xy 184.15 76.2) (xy 187.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5d9ea7-3ab5-4843-b83b-6050aad7d09a")
+	)
+	(wire
+		(pts
+			(xy 180.34 85.09) (xy 180.34 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d62e9cf-ed5d-4f83-968f-5c38854f9296")
+	)
+	(wire
+		(pts
+			(xy 105.41 106.68) (xy 105.41 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "209521d0-8e5d-4aeb-bc85-19b61e11cc77")
+	)
+	(wire
+		(pts
+			(xy 106.68 97.79) (xy 105.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20cdacaa-992d-462a-ac2e-abdf090a91d2")
+	)
+	(wire
+		(pts
+			(xy 129.54 48.26) (xy 129.54 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1254,7 +2581,27 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 86.36) (xy 72.39 86.36)
+			(xy 105.41 106.68) (xy 105.41 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21bce783-593a-4c7f-9e32-4b5307613970")
+	)
+	(wire
+		(pts
+			(xy 144.78 76.2) (xy 148.59 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "249b6623-6fd0-4d10-aef0-3dbc63f8c831")
+	)
+	(wire
+		(pts
+			(xy 154.94 48.26) (xy 154.94 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1264,7 +2611,57 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 111.76) (xy 72.39 116.84)
+			(xy 72.39 111.76) (xy 76.2 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2649312f-b37c-42f0-bea4-083adfbd7edd")
+	)
+	(wire
+		(pts
+			(xy 168.91 92.71) (xy 168.91 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "285a6965-bd0a-4e1a-a9ff-bfc841007dc1")
+	)
+	(wire
+		(pts
+			(xy 121.92 87.63) (xy 114.3 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2911b5e1-0e58-4579-b3f5-f797d10e86ed")
+	)
+	(wire
+		(pts
+			(xy 105.41 100.33) (xy 105.41 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aab4a05-ae98-4733-b884-24df8107a1e1")
+	)
+	(wire
+		(pts
+			(xy 101.6 106.68) (xy 105.41 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be72135-01d4-40d3-a1e0-2bcbe75f4866")
+	)
+	(wire
+		(pts
+			(xy 180.34 52.07) (xy 185.42 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1274,17 +2671,47 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 138.43) (xy 156.21 138.43)
+			(xy 101.6 85.09) (xy 101.6 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e757785-bc93-4e2c-8691-8108af76e0fc")
+		(uuid "2d98a570-92e5-40d1-8d65-47839a634140")
 	)
 	(wire
 		(pts
-			(xy 76.2 91.44) (xy 72.39 91.44)
+			(xy 208.28 76.2) (xy 208.28 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e694c40-b028-45e6-81bf-69601bdeb9e2")
+	)
+	(wire
+		(pts
+			(xy 184.15 107.95) (xy 184.15 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "385fd47b-70bc-4d2d-a663-6d38f368b83a")
+	)
+	(wire
+		(pts
+			(xy 101.6 111.76) (xy 140.97 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aaa5253-3f1a-40f5-aae0-743e7394d3ec")
+	)
+	(wire
+		(pts
+			(xy 160.02 48.26) (xy 160.02 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1294,57 +2721,137 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 104.14) (xy 163.83 105.41)
+			(xy 153.67 76.2) (xy 153.67 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41d308a2-1796-483b-b34b-8e192dd29f52")
+		(uuid "42d2044a-d51b-432e-841b-a135cb3f930d")
 	)
 	(wire
 		(pts
-			(xy 163.83 132.08) (xy 163.83 133.35)
+			(xy 105.41 83.82) (xy 105.41 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "47a55b88-a4cc-4799-8c91-024458c63c35")
+		(uuid "4687e676-d51e-4733-8948-d7d43f8793c7")
 	)
 	(wire
 		(pts
-			(xy 152.4 50.8) (xy 156.21 50.8)
+			(xy 72.39 88.9) (xy 72.39 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a71f634-f1c1-4534-9063-c9e606ee23d7")
+		(uuid "47381776-f3b1-4c3c-a6c8-60de24839b3f")
 	)
 	(wire
 		(pts
-			(xy 163.83 115.57) (xy 163.83 116.84)
+			(xy 129.54 76.2) (xy 129.54 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c7a2c56-cc75-4669-8d88-d6e25de00cae")
+		(uuid "48becf18-00da-4f09-8e4e-c710e243cebd")
 	)
 	(wire
 		(pts
-			(xy 163.83 86.36) (xy 163.83 87.63)
+			(xy 153.67 87.63) (xy 153.67 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6a6edb13-5a39-4272-a9b8-9b424712f5d8")
+		(uuid "4962cd8a-b592-4433-9005-e271155761b2")
 	)
 	(wire
 		(pts
-			(xy 76.2 101.6) (xy 72.39 101.6)
+			(xy 114.3 121.92) (xy 129.54 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d1423b2-0f74-4816-8e91-b534c3b16086")
+	)
+	(wire
+		(pts
+			(xy 144.78 83.82) (xy 144.78 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dbecc3d-cd54-4c55-a647-187b4bd6a220")
+	)
+	(wire
+		(pts
+			(xy 114.3 87.63) (xy 114.3 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6218c917-26a3-4d93-858d-bd94cd9ab0c1")
+	)
+	(wire
+		(pts
+			(xy 52.07 118.11) (xy 72.39 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "628dca00-2953-4894-a0cf-302273e28a30")
+	)
+	(wire
+		(pts
+			(xy 60.96 116.84) (xy 60.96 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a70c79-682e-4c94-af96-67143ca00475")
+	)
+	(wire
+		(pts
+			(xy 193.04 121.92) (xy 208.28 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69b3fb07-ccc1-4420-8140-f9ccb661595f")
+	)
+	(wire
+		(pts
+			(xy 52.07 109.22) (xy 52.07 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a3d2b27-3432-4802-b07a-2b37aa97b2e5")
+	)
+	(wire
+		(pts
+			(xy 144.78 107.95) (xy 144.78 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cb0e315-8523-4c3e-8b84-0bcff6f1a3f1")
+	)
+	(wire
+		(pts
+			(xy 170.18 48.26) (xy 170.18 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1354,67 +2861,107 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 110.49) (xy 156.21 110.49)
+			(xy 175.26 48.26) (xy 175.26 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78385197-18d9-4e95-9142-a2d019ebfce2")
+		(uuid "72eadabf-1e92-4ceb-945e-46c41f05b3be")
 	)
 	(wire
 		(pts
-			(xy 152.4 67.31) (xy 156.21 67.31)
+			(xy 140.97 76.2) (xy 144.78 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8374136e-1f70-4c71-ae02-ede2cf91dac1")
+		(uuid "76cf07fb-c7ca-43b6-b10e-a8e4199474a6")
 	)
 	(wire
 		(pts
-			(xy 152.4 96.52) (xy 156.21 96.52)
+			(xy 129.54 121.92) (xy 153.67 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84e8ab8d-90e6-4460-9f5e-7d5073eb9838")
+		(uuid "7756c82e-7fdc-4bdb-9705-49d65d6c6625")
 	)
 	(wire
 		(pts
-			(xy 152.4 124.46) (xy 156.21 124.46)
+			(xy 184.15 83.82) (xy 184.15 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ead361b-108f-4fd9-a07f-b88ab67dffa8")
+		(uuid "7816ed58-1c64-491a-88f7-0b2c22502ea6")
 	)
 	(wire
 		(pts
-			(xy 152.4 132.08) (xy 163.83 132.08)
+			(xy 109.22 74.93) (xy 109.22 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "93591d4f-7dd6-45c4-a15c-a8a1b50b5c97")
+		(uuid "7c687540-bd24-469f-825e-31a7afaa2f8e")
 	)
 	(wire
 		(pts
-			(xy 163.83 55.88) (xy 163.83 57.15)
+			(xy 129.54 92.71) (xy 129.54 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94034486-c697-452c-9245-74f3a4c6da2f")
+		(uuid "7d15e7ce-3554-4331-9f95-48fd574c603b")
 	)
 	(wire
 		(pts
-			(xy 76.2 71.12) (xy 72.39 71.12)
+			(xy 148.59 74.93) (xy 148.59 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e66d56b-f1f4-4aa1-afe6-97d9e25710d2")
+	)
+	(wire
+		(pts
+			(xy 109.22 76.2) (xy 114.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "804ef65e-e3a1-4b0f-a4ed-25e2a8650dc4")
+	)
+	(wire
+		(pts
+			(xy 114.3 121.92) (xy 114.3 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "805756e0-f930-4eaa-88aa-303c95a15911")
+	)
+	(wire
+		(pts
+			(xy 146.05 97.79) (xy 144.78 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c03d526-14c3-4003-8f45-710cdb07cb75")
+	)
+	(wire
+		(pts
+			(xy 139.7 48.26) (xy 139.7 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1424,37 +2971,77 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 106.68) (xy 72.39 106.68)
+			(xy 208.28 92.71) (xy 208.28 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "984c12c2-fc8f-42bf-851b-80eb23e5e723")
+		(uuid "959f2c58-0667-40f8-a837-bbe3bfd90a7f")
 	)
 	(wire
 		(pts
-			(xy 152.4 44.45) (xy 163.83 44.45)
+			(xy 168.91 121.92) (xy 193.04 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b6c7ddb-49c8-45c5-92b1-671f7b16e4cb")
+		(uuid "97555b1c-5fac-4553-b218-87ea8ea03def")
 	)
 	(wire
 		(pts
-			(xy 152.4 57.15) (xy 163.83 57.15)
+			(xy 193.04 121.92) (xy 193.04 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d1a08e4-4004-4e14-98f4-98e10b7cb69e")
+		(uuid "9857f0c2-1185-4abd-a864-9847cc419611")
 	)
 	(wire
 		(pts
-			(xy 72.39 96.52) (xy 76.2 96.52)
+			(xy 161.29 87.63) (xy 153.67 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ffd3b9-57bf-4530-9c07-3cbbe1ff4c48")
+	)
+	(wire
+		(pts
+			(xy 180.34 77.47) (xy 180.34 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "990fcab3-0a01-4966-a548-34da975e0e22")
+	)
+	(wire
+		(pts
+			(xy 184.15 114.3) (xy 180.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ab7783d-b5dc-4461-9e9e-0ee11199846c")
+	)
+	(wire
+		(pts
+			(xy 193.04 83.82) (xy 193.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cdaf097-e291-4475-a1ef-57f6e33ce10c")
+	)
+	(wire
+		(pts
+			(xy 165.1 52.07) (xy 165.1 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1464,17 +3051,97 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 104.14) (xy 163.83 104.14)
+			(xy 114.3 83.82) (xy 114.3 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a4f6d302-8bcd-4269-afdc-88313863ca6f")
+		(uuid "a3c0f6c2-5766-47b2-8486-e2fa7b6e280b")
 	)
 	(wire
 		(pts
-			(xy 72.39 66.04) (xy 76.2 66.04)
+			(xy 60.96 109.22) (xy 76.2 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a52c952d-bda1-4c47-a5a8-bd77968b7290")
+	)
+	(wire
+		(pts
+			(xy 168.91 76.2) (xy 168.91 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6166033-fc33-4bf0-ba4b-e41794e56e88")
+	)
+	(wire
+		(pts
+			(xy 184.15 78.74) (xy 184.15 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a88fa0b6-5293-4e99-97fa-f7c8247b57b3")
+	)
+	(wire
+		(pts
+			(xy 187.96 76.2) (xy 193.04 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "accc2d3b-28bd-4eba-8e6d-71d397174f31")
+	)
+	(wire
+		(pts
+			(xy 200.66 87.63) (xy 193.04 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adca9a68-33ce-45cb-ad41-0c02241dafd0")
+	)
+	(wire
+		(pts
+			(xy 58.42 88.9) (xy 58.42 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af94bde8-c0ed-4d0e-9ebc-c4f55c528677")
+	)
+	(wire
+		(pts
+			(xy 58.42 100.33) (xy 58.42 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b21737d6-e155-4eae-ab35-92f69b91ef1e")
+	)
+	(wire
+		(pts
+			(xy 184.15 102.87) (xy 184.15 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b29b8caf-af84-4486-97a5-89424b508981")
+	)
+	(wire
+		(pts
+			(xy 134.62 52.07) (xy 134.62 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1484,7 +3151,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 116.84) (xy 72.39 116.84)
+			(xy 185.42 48.26) (xy 185.42 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1494,17 +3161,87 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 44.45) (xy 163.83 45.72)
+			(xy 72.39 114.3) (xy 72.39 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c17724cd-9bc6-41cd-a7a0-0f0abc5a6ed0")
+		(uuid "b72734e3-54a5-4878-bb7e-abc0ed20c089")
 	)
 	(wire
 		(pts
-			(xy 76.2 111.76) (xy 72.39 111.76)
+			(xy 180.34 76.2) (xy 184.15 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bba4519d-0584-4ae5-9017-570ef4588528")
+	)
+	(wire
+		(pts
+			(xy 68.58 88.9) (xy 72.39 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c019ffdf-a93c-4a3c-9e9d-3f0455f3d631")
+	)
+	(wire
+		(pts
+			(xy 105.41 76.2) (xy 109.22 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1ded6e4-8bb5-42e8-9fb3-dd73da146b8f")
+	)
+	(wire
+		(pts
+			(xy 58.42 88.9) (xy 60.96 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2f81371-7449-4a66-bf73-f0fdf9ddf70d")
+	)
+	(wire
+		(pts
+			(xy 114.3 76.2) (xy 114.3 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c69c81fc-bca6-4c79-8b9b-0216d329d9f4")
+	)
+	(wire
+		(pts
+			(xy 144.78 102.87) (xy 144.78 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c70b1bbf-cb91-4192-8c96-64a59f003923")
+	)
+	(wire
+		(pts
+			(xy 180.34 107.95) (xy 180.34 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7d1547b-6fea-4e04-8789-a7be53bb834f")
+	)
+	(wire
+		(pts
+			(xy 180.34 48.26) (xy 180.34 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1514,7 +3251,37 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 81.28) (xy 72.39 86.36)
+			(xy 60.96 121.92) (xy 101.6 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb5e29a7-8cc7-4a11-adcd-a37053399ea8")
+	)
+	(wire
+		(pts
+			(xy 101.6 105.41) (xy 101.6 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbacb7ff-f5a0-42bc-9d0d-36588df39a2b")
+	)
+	(wire
+		(pts
+			(xy 187.96 74.93) (xy 187.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccda71ac-1045-4113-a1f4-f2b4e2c821c7")
+	)
+	(wire
+		(pts
+			(xy 149.86 52.07) (xy 154.94 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1524,27 +3291,87 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 116.84) (xy 163.83 116.84)
+			(xy 185.42 97.79) (xy 184.15 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d7b546e8-92e6-4184-9634-74fd0e132f9c")
+		(uuid "d1408f5a-9a15-42c4-99e8-f9f15af7dcb9")
 	)
 	(wire
 		(pts
-			(xy 152.4 144.78) (xy 163.83 144.78)
+			(xy 105.41 78.74) (xy 105.41 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd6e6e5c-5836-47b1-ae17-f64a40048611")
+		(uuid "d22960ed-6004-48c8-8883-bcfc645261ca")
 	)
 	(wire
 		(pts
-			(xy 72.39 96.52) (xy 72.39 101.6)
+			(xy 101.6 121.92) (xy 114.3 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7248cd9-73f2-483b-b8ae-832de12b1a86")
+	)
+	(wire
+		(pts
+			(xy 52.07 118.11) (xy 52.07 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbadb667-d5af-472c-96c7-69446151b27c")
+	)
+	(wire
+		(pts
+			(xy 101.6 76.2) (xy 105.41 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc375608-d846-4e9c-bbbd-e885b6ed325f")
+	)
+	(wire
+		(pts
+			(xy 153.67 121.92) (xy 153.67 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd9d5b87-2597-45b8-8d0b-7364bd69792b")
+	)
+	(wire
+		(pts
+			(xy 153.67 121.92) (xy 168.91 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ded81445-5db7-4547-9f4f-0e6e17c19b3d")
+	)
+	(wire
+		(pts
+			(xy 101.6 114.3) (xy 105.41 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e32a9576-9047-4179-a02e-88a908211b6f")
+	)
+	(wire
+		(pts
+			(xy 165.1 52.07) (xy 170.18 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1554,233 +3381,111 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 74.93) (xy 163.83 74.93)
+			(xy 193.04 87.63) (xy 193.04 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0b56364-9aac-4d62-a96e-389bdffe3a7f")
+		(uuid "e75cae0e-fd53-43c5-a105-658b67ffab4e")
 	)
 	(wire
 		(pts
-			(xy 152.4 87.63) (xy 163.83 87.63)
+			(xy 193.04 76.2) (xy 193.04 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f137a013-1431-4721-bc73-053db283a8e5")
+		(uuid "eb36eeab-7d52-439f-aa1e-3f587b98a05b")
 	)
 	(wire
 		(pts
-			(xy 163.83 143.51) (xy 163.83 144.78)
+			(xy 148.59 76.2) (xy 153.67 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f4786fd1-abec-4987-96a1-15d6612e5632")
+		(uuid "f96e089f-faaf-43ae-bd06-9c6d473a7317")
 	)
 	(wire
 		(pts
-			(xy 163.83 74.93) (xy 163.83 76.2)
+			(xy 140.97 85.09) (xy 140.97 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f4eb2bcc-16e4-4f08-9d74-2dab7fc7f1f8")
+		(uuid "fa67f537-e379-4dc6-8c54-a46e2f04950d")
 	)
 	(wire
 		(pts
-			(xy 72.39 66.04) (xy 72.39 71.12)
+			(xy 140.97 77.47) (xy 140.97 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fda0789f-2808-4375-8111-c1b2e6d0d5e4")
+		(uuid "fd7756d4-343d-47c1-ab12-dfc15874b83f")
 	)
-	(global_label "SIG-LED4"
+	(wire
+		(pts
+			(xy 101.6 121.92) (xy 101.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "febdcec4-1702-43a0-a7ad-6c9534c11493")
+	)
+	(global_label "LED1"
 		(shape input)
-		(at 152.4 138.43 180)
+		(at 129.54 76.2 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "05c02ef3-d48a-4428-a9e8-c5ebbe801792")
+		(uuid "0de664d5-de44-4aba-a9b8-0a0382c609fa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 138.43 0)
+			(at 129.54 68.5582 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED4"
-		(shape input)
-		(at 152.4 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0738e21c-4af1-4b3f-ad75-a76d3c025cb7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.7582 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SIG-LED1"
-		(shape input)
-		(at 152.4 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "11df4577-6efd-4187-a923-c0ea3db939d8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SIG-LED1"
-		(shape input)
-		(at 152.4 36.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "18a4e358-5b01-40b9-ad14-4f7650d68c3a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SIG-LED3"
-		(shape input)
-		(at 152.4 110.49 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "46049ce0-228a-41c7-a996-4456bbd94c76")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED3"
-		(shape input)
-		(at 72.39 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5638c8db-8a1b-440a-b40a-c1ae71f15d66")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.7482 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SIG-LED2"
-		(shape input)
-		(at 152.4 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6146ed2b-8811-418e-afd2-eac96a4caa3b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED4"
-		(shape input)
-		(at 72.39 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "75634f0c-986a-4cbd-9f65-bf0c7f9237a6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.7482 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "LED2"
 		(shape input)
-		(at 152.4 74.93 180)
+		(at 168.91 76.2 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2badc77d-2550-48e6-9da9-669635866de2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 168.91 68.5582 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED3"
+		(shape input)
+		(at 175.26 52.07 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1788,9 +3493,75 @@
 			)
 			(justify right)
 		)
-		(uuid "82175d3b-2bf6-49ab-ad4c-62b449fedb75")
+		(uuid "6ecfa7d5-02e7-4781-91f1-4fda46c67626")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.7582 74.93 0)
+			(at 175.26 59.7118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WS2811-DIN"
+		(shape input)
+		(at 52.07 88.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6fb94d69-e769-4186-91c7-8628a5ca221c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 52.07 73.6382 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED3"
+		(shape input)
+		(at 208.28 76.2 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9249d49-c65b-4c77-b731-2c047563b6de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 208.28 68.5582 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WS2812"
+		(shape input)
+		(at 134.62 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dee6d105-1604-41a9-8ef1-0f581028c89f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.62 62.5541 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1802,7 +3573,7 @@
 	)
 	(global_label "LED1"
 		(shape input)
-		(at 72.39 60.96 180)
+		(at 144.78 52.07 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1810,31 +3581,9 @@
 			)
 			(justify right)
 		)
-		(uuid "836965d1-7e1e-489e-b615-5f2504573a5f")
+		(uuid "e2a08231-a8fa-4644-88be-1d05a609402a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.7482 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SIG-LED2"
-		(shape input)
-		(at 152.4 67.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9108abf6-a177-41ef-8191-8dcf69e61f35")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 67.31 0)
+			(at 144.78 59.7118 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +3595,7 @@
 	)
 	(global_label "LED2"
 		(shape input)
-		(at 72.39 76.2 180)
+		(at 160.02 52.07 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1854,97 +3603,9 @@
 			)
 			(justify right)
 		)
-		(uuid "9b5d435c-7fa6-4430-b04a-d00a24e5d1f6")
+		(uuid "f3f32529-bae0-4ae3-9ae5-7ac848dbdf63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.7482 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SIG-LED4"
-		(shape input)
-		(at 152.4 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9fa1e66e-26ee-43b4-869a-21103bcaf971")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SIG-LED3"
-		(shape input)
-		(at 152.4 96.52 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9fa4a309-6117-44f7-ae27-0f514a20b045")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 140.1015 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED1"
-		(shape input)
-		(at 152.4 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dae92e9e-18ca-41ee-83f1-a47b40106786")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.7582 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LED3"
-		(shape input)
-		(at 152.4 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e3a7e573-1be8-4da3-95ab-fba0ba6d40ee")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 144.7582 104.14 0)
+			(at 160.02 59.7118 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1955,83 +3616,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 96.52 90)
+		(lib_id "Device:R_Small")
+		(at 52.07 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "08610a4b-42c9-4b13-b395-acea061aeb59")
-		(property "Reference" "#PWR058"
-			(at 175.26 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 173.99 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3b62594e-a219-4466-86c6-182272eabfd8")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:IRLZ34N")
-		(at 161.29 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a109756-2581-4993-a634-f23af284b448")
-		(property "Reference" "Q8"
-			(at 167.64 109.2199 0)
+		(uuid "1f3452e9-d149-4d1c-813a-76da90ff3f75")
+		(property "Reference" "R21"
+			(at 54.61 110.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2039,8 +3634,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLZ34N"
-			(at 167.64 111.7599 0)
+		(property "Value" "33"
+			(at 54.61 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2048,348 +3643,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 166.37 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720"
-			(at 166.37 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 161.29 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7474f01b-8282-49a3-a84a-0f1e23164b10")
-		)
-		(pin "1"
-			(uuid "fc7b7f4d-2f87-4c07-bc73-a2a0cc09592b")
-		)
-		(pin "3"
-			(uuid "cf785e92-8de7-40df-8860-87708097e31b")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 152.4 144.78 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1821cc0a-1b96-4480-a4bf-7895ca237a8e")
-		(property "Reference" "#PWR020"
-			(at 146.05 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 144.7799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "54b5a6cf-f094-44db-b8f1-ac390c969a35")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 152.4 116.84 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d616a8a-251e-48f6-9103-7bae9d730692")
-		(property "Reference" "#PWR019"
-			(at 146.05 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 116.8399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2e3c2bc2-3009-41cb-8ebf-bbdf7f2d7790")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 168.91 124.46 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d706dc6-c202-4384-b3cc-74075e583ed1")
-		(property "Reference" "#PWR059"
-			(at 175.26 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 173.99 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d63d0a5a-c66a-41ab-8aeb-a5798f1243c5")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR059")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 168.91 67.31 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2dfed1ac-5c4a-4be5-965d-2bed7a3020d1")
-		(property "Reference" "#PWR057"
-			(at 175.26 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 173.99 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "750fe120-88d7-4ab2-a1d8-fd9eb2ea2388")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 165.1 36.83 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c993118-29e8-4b61-98d3-c2aeb0f6d838")
-		(property "Reference" "D13"
-			(at 166.6875 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 166.6875 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 165.1 36.83 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 52.07 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2398,7 +3653,303 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 36.83 0)
+			(at 52.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 52.07 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a579bcde-94d7-4499-bad2-c6efc4248095")
+		)
+		(pin "1"
+			(uuid "b3f69833-b635-4091-8056-81a247f48402")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 187.96 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33c8165f-eda8-4564-9789-e1d1ad343e93")
+		(property "Reference" "#PWR0104"
+			(at 187.96 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 187.96 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 187.96 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25137251-674e-4cc2-8df4-7d4351e89f35")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 184.15 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33da6702-8f0b-4df7-b72e-7b9a16cb4cf1")
+		(property "Reference" "R37"
+			(at 186.69 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 186.69 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 184.15 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 184.15 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "410d3adf-83b4-47ae-a1ec-7b04bc15689f")
+		)
+		(pin "1"
+			(uuid "a96d00ee-8299-4f01-90c5-327d009865c9")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 64.77 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "354452d6-a139-40cc-b75e-02f200eac87d")
+		(property "Reference" "JP1"
+			(at 64.77 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Low-Speed"
+			(at 64.77 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba8cd61a-c5b2-40ac-978c-50c89479f823")
+		)
+		(pin "1"
+			(uuid "db97d081-92e1-4131-a3ff-ab3cf41f61eb")
+		)
+		(instances
+			(project ""
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 101.6 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c993118-29e8-4b61-98d3-c2aeb0f6d838")
+		(property "Reference" "D13"
+			(at 95.25 82.8675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 97.79 82.8675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 101.6 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,7 +3958,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 165.1 36.83 0)
+			(at 101.6 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,6 +3973,12 @@
 			(uuid "03003e3f-4199-48e3-90fd-2f78da1f5ce2")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
 					(reference "D13")
@@ -2431,17 +3988,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRLZ34N")
-		(at 161.29 50.8 0)
+		(lib_id "Transistor_FET:STD7NK40Z")
+		(at 205.74 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3c9ba2a2-3e29-47cd-933c-7912a0c7aee9")
-		(property "Reference" "Q4"
-			(at 167.64 49.5299 0)
+		(uuid "4bf43c23-b97a-44fb-9a22-0ce9ba318f01")
+		(property "Reference" "Q12"
+			(at 212.09 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2449,8 +4006,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLZ34N"
-			(at 167.64 52.0699 0)
+		(property "Value" "NTD5867NL"
+			(at 212.09 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2458,8 +4015,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 166.37 52.705 0)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 210.82 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,8 +4026,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720"
-			(at 166.37 54.61 0)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/std7nk40zt4.pdf"
+			(at 210.82 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,61 +4036,151 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 161.29 50.8 0)
+		(property "Description" "5.4A Id, 400V Vds, N-Channel MOSFET, 1Ohm Ron, DPAK"
+			(at 205.74 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "1640d5c0-72e0-4749-adb2-25d618452825")
-		)
-		(pin "1"
-			(uuid "ae9a04ea-bff1-4757-b695-af3ef547dba3")
 		)
 		(pin "3"
-			(uuid "8a68a66a-b231-4a09-bf71-938b2b695b97")
+			(uuid "58641a71-3274-46dd-870c-5d228a6e58ee")
+		)
+		(pin "2"
+			(uuid "f0d291a2-475f-4d80-ad2e-440cfccf2f2e")
+		)
+		(pin "1"
+			(uuid "8c993528-06e2-432a-aa07-5eff54e7616f")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "Q10")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "Q4")
+					(reference "Q12")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 165.1 124.46 180)
+		(lib_id "Transistor_FET:STD7NK40Z")
+		(at 127 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5c1360c5-17a8-42d6-9ff5-1d26f39889ae")
-		(property "Reference" "D16"
-			(at 166.6875 130.81 0)
+		(uuid "4d21c1e3-b63c-4c0d-a3b8-dacdf8d8bc00")
+		(property "Reference" "Q11"
+			(at 133.35 86.3599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "LED"
-			(at 166.6875 128.27 0)
+		(property "Value" "NTD5867NL"
+			(at 133.35 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 165.1 124.46 0)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 132.08 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/std7nk40zt4.pdf"
+			(at 132.08 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.4A Id, 400V Vds, N-Channel MOSFET, 1Ohm Ron, DPAK"
+			(at 127 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "ace55d82-86e6-4ab0-b1db-bcb3be3824e3")
+		)
+		(pin "2"
+			(uuid "f50619ef-2d8b-4dba-8963-d58c0d1368f6")
+		)
+		(pin "1"
+			(uuid "a4c049a7-5508-49e1-9718-1599489cc6fe")
+		)
+		(instances
+			(project ""
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "Q11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 184.15 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4de57ff9-26ca-4448-b1f3-5c796ee2c8c1")
+		(property "Reference" "R36"
+			(at 186.69 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 186.69 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 184.15 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,7 +4189,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 124.46 0)
+			(at 184.15 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2550,8 +4197,256 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 165.1 124.46 0)
+		(property "Description" "Resistor, small symbol"
+			(at 184.15 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8e8658c4-422a-4fee-803b-f7e0f3b14b62")
+		)
+		(pin "1"
+			(uuid "4190ef7c-706e-4768-afa0-a09ccc7e1b9c")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "WS2811:WS2811")
+		(at 88.9 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f5f1bae-395c-49e5-a868-5e095a129d24")
+		(property "Reference" "IC1"
+			(at 88.9 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2811"
+			(at 88.9 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "WS2811:SO08-SKINNYPADS"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Adafruit"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "IC: driver; LED controller; MSOP8; 6÷7VDC; PWM; WS28XX"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/WS2811/Adafruit+Industries/view-part/?ref=snap"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "WS2811"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/WS2811/Adafruit+Industries/view-part/?ref=eda"
+			(at 88.9 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a06ca6c8-95f4-4839-9c12-6dd801be990d")
+		)
+		(pin "3"
+			(uuid "c4d1102c-1d0d-4042-967e-2f744781ae94")
+		)
+		(pin "8"
+			(uuid "5823b941-0051-4e86-85dc-3878ac8e3a30")
+		)
+		(pin "7"
+			(uuid "b82299fc-f4a3-445e-9418-c4aeaf7abb5a")
+		)
+		(pin "4"
+			(uuid "28c57912-98a4-4495-aaa6-ae4319da8d09")
+		)
+		(pin "6"
+			(uuid "7aeb9fed-aa7e-47a7-9106-b26e6ace82a5")
+		)
+		(pin "5"
+			(uuid "3a19b1bc-7e66-4354-b7e6-ff82df7fda26")
+		)
+		(pin "2"
+			(uuid "99b3ff88-8c30-4ff3-b4b9-52eb2d7490f9")
+		)
+		(instances
+			(project ""
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 148.59 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "54ec1bed-7406-4cef-b1bb-ef82292b6a2c")
+		(property "Reference" "#PWR0107"
+			(at 148.59 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 148.59 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 148.59 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2560,48 +4455,53 @@
 			)
 		)
 		(pin "1"
-			(uuid "905b7dce-9bf5-426a-b3bf-21a988ce0fc8")
-		)
-		(pin "2"
-			(uuid "cf97b604-3642-46fe-8415-73af16e1c244")
+			(uuid "8dcacc45-68f5-4394-a3cc-e2fc36a5978b")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "D16")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 165.1 96.52 180)
+		(lib_id "Device:R_Small")
+		(at 58.42 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "66b66d51-3d2c-47e3-b27d-cfd78c51be3a")
-		(property "Reference" "D15"
-			(at 166.6875 102.87 0)
+		(uuid "56c11c4d-29d7-4aa5-8799-4faebaefa757")
+		(property "Reference" "R22"
+			(at 60.96 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "LED"
-			(at 166.6875 100.33 0)
+		(property "Value" "100"
+			(at 60.96 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 165.1 96.52 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 58.42 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2610,7 +4510,80 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 96.52 0)
+			(at 58.42 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 58.42 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8698a624-f31f-4ef2-9da8-d57f60149e1f")
+		)
+		(pin "1"
+			(uuid "6a9cf00e-8914-4804-8166-518c7b98dcb8")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 180.34 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66b66d51-3d2c-47e3-b27d-cfd78c51be3a")
+		(property "Reference" "D15"
+			(at 173.99 81.5975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 176.53 81.5975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 180.34 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2619,7 +4592,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 165.1 96.52 0)
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2634,6 +4607,12 @@
 			(uuid "72c2eb90-c5ad-440c-a9f9-dea651eb7228")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "D3")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
 					(reference "D15")
@@ -2643,8 +4622,243 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:STD7NK40Z")
+		(at 166.37 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72d42ad8-87c7-4250-a47f-de5466303db5")
+		(property "Reference" "Q8"
+			(at 172.72 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NTD5867NL"
+			(at 172.72 88.8999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TO-252-2"
+			(at 171.45 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/std7nk40zt4.pdf"
+			(at 171.45 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "5.4A Id, 400V Vds, N-Channel MOSFET, 1Ohm Ron, DPAK"
+			(at 166.37 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "fedf6893-5547-489a-af3c-4fe41849f1bb")
+		)
+		(pin "2"
+			(uuid "d0dfdb1a-522f-47be-a8ea-3276d2b5bb75")
+		)
+		(pin "1"
+			(uuid "23d4091b-7231-42d8-b1ac-85087001ab64")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS214NW")
+		(at 190.5 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77b2e7b3-e2da-415a-8f30-b9f5b08940de")
+		(property "Reference" "Q9"
+			(at 196.85 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS214NW"
+			(at 196.85 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+			(at 195.58 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde"
+			(at 195.58 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323"
+			(at 190.5 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca7cf68c-e7df-4f16-a759-f62c1f2a4c09")
+		)
+		(pin "1"
+			(uuid "4ce86897-872e-4c7c-8432-3de8172242ab")
+		)
+		(pin "3"
+			(uuid "8d84c77c-47b4-43ce-bcda-8b29f723aa2c")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "Q9")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "Q9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fe9a2f0-b4bb-4b84-bd02-41f4fb0d3555")
+		(property "Reference" "#PWR0102"
+			(at 60.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6948d94e-2af4-400c-a9ea-120f2cf4b0a0")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
-		(at 158.75 96.52 270)
+		(at 180.34 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2652,8 +4866,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92d5a00c-2937-4b33-a3a8-474ce5a0d5ae")
-		(property "Reference" "R23"
-			(at 158.75 101.6 90)
+		(property "Reference" "R35"
+			(at 175.26 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2661,7 +4875,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 158.75 99.06 90)
+			(at 177.8 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2669,7 +4883,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 158.75 96.52 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2678,7 +4892,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 96.52 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2687,7 +4901,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 158.75 96.52 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2702,9 +4916,15 @@
 			(uuid "9518d0cc-3d19-40ec-a6eb-47b7003449f4")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R3")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "R23")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -2712,75 +4932,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 158.75 124.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97fc49c3-6335-4d45-958e-1a08214a92da")
-		(property "Reference" "R24"
-			(at 158.75 129.54 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 158.75 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 158.75 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 158.75 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "de5c455d-a1dc-4d4e-89dc-c6e77997ebe9")
-		)
-		(pin "1"
-			(uuid "7e230162-7d52-49d7-8489-8e9d31b9b4bc")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 158.75 36.83 270)
+		(at 101.6 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2788,8 +4940,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ba38ea0-8cf4-486a-b5c5-9a6900c286e7")
-		(property "Reference" "R21"
-			(at 158.75 41.91 90)
+		(property "Reference" "R23"
+			(at 96.52 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2797,7 +4949,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 158.75 39.37 90)
+			(at 99.06 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2805,7 +4957,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 158.75 36.83 0)
+			(at 101.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2814,7 +4966,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 36.83 0)
+			(at 101.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2823,7 +4975,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 158.75 36.83 0)
+			(at 101.6 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,26 +4990,32 @@
 			(uuid "0736c4ad-36e1-450e-acf9-70d14378627d")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "R21")
+					(reference "R23")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRLZ34N")
-		(at 161.29 81.28 0)
+		(lib_id "Transistor_FET:BSS214NW")
+		(at 151.13 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a1bc6892-492e-4361-a6c9-24ad7fb6ad11")
+		(uuid "9ca72baf-a040-4c14-9fa3-53010f6b9f0d")
 		(property "Reference" "Q7"
-			(at 167.64 80.0099 0)
+			(at 157.48 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,8 +5023,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLZ34N"
-			(at 167.64 82.5499 0)
+		(property "Value" "BSS214NW"
+			(at 157.48 99.0599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2874,8 +5032,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 166.37 83.185 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+			(at 156.21 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2885,8 +5043,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720"
-			(at 166.37 85.09 0)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde"
+			(at 156.21 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,8 +5053,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 161.29 81.28 0)
+		(property "Description" "20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323"
+			(at 151.13 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2905,15 +5063,21 @@
 			)
 		)
 		(pin "2"
-			(uuid "bc47ef6f-c53a-4e52-ad01-3b9ae919c865")
+			(uuid "ce42d106-8223-400a-892a-47087e70f21f")
 		)
 		(pin "1"
-			(uuid "6cd27c6e-a725-40c5-af09-878fa732f483")
+			(uuid "45c2b688-b4c1-4610-bb27-6e7733e7f76a")
 		)
 		(pin "3"
-			(uuid "1534b463-1d9a-46d3-afd0-22c50a288886")
+			(uuid "edcedf9a-d939-4a7a-a3ad-5eff59ac2b31")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
 					(reference "Q7")
@@ -2923,33 +5087,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 165.1 67.31 180)
+		(lib_id "Device:R_Small")
+		(at 105.41 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c2fb32f4-fa2f-4590-9d84-77a0b3f195c3")
-		(property "Reference" "D14"
-			(at 166.6875 73.66 0)
+		(uuid "a442c1ce-da43-4de2-9785-02933a850745")
+		(property "Reference" "R24"
+			(at 107.95 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "LED"
-			(at 166.6875 71.12 0)
+		(property "Value" "10k"
+			(at 107.95 82.5499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 165.1 67.31 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 105.41 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2958,7 +5124,449 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 67.31 0)
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "12bc29cb-d32d-46e5-a1fe-33682193bf92")
+		)
+		(pin "1"
+			(uuid "ae9a3cff-1b1c-4a95-bf0e-dee8b534005b")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 109.22 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac8bda44-1164-4880-9a89-04ef876995a5")
+		(property "Reference" "#PWR0101"
+			(at 109.22 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 109.22 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 109.22 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40713ae8-b768-4210-a99b-6db872547c7e")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 60.96 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b12b9d6b-f90f-4214-a55b-df01bcf47ec6")
+		(property "Reference" "C3"
+			(at 64.77 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 64.77 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 61.9252 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 60.96 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3daeec74-32eb-4969-bf08-a0fb39892ee0")
+		)
+		(pin "1"
+			(uuid "11fbe673-3510-4b01-999d-a8778381b913")
+		)
+		(instances
+			(project ""
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 58.42 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2bb4ec5-e0d9-4caf-8724-621c052b76cf")
+		(property "Reference" "#PWR0103"
+			(at 58.42 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 58.42 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 58.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de5cd2c6-1b59-4ef0-9103-1607108adb0d")
+		)
+		(instances
+			(project ""
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 129.54 52.07 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b48b79b7-6b49-4900-98e6-446265be1760")
+		(property "Reference" "#PWR0106"
+			(at 129.54 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 129.54 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 129.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d57ee7ec-f8c3-42a4-b84b-6aca3a0322ee")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 144.78 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b57d5ec5-e64a-48b4-ab89-eb6d61c3525b")
+		(property "Reference" "R33"
+			(at 147.32 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 147.32 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 144.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 144.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dcb3a63e-94f4-4ba3-b1b2-6e91ee30e6f6")
+		)
+		(pin "1"
+			(uuid "5d1d8d8b-ff4e-44a2-a4b6-b620b68cc417")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 140.97 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2fb32f4-fa2f-4590-9d84-77a0b3f195c3")
+		(property "Reference" "D14"
+			(at 134.62 82.8675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 137.16 82.8675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 140.97 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.97 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2967,7 +5575,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 165.1 67.31 0)
+			(at 140.97 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2982,6 +5590,12 @@
 			(uuid "f8593a30-4820-4d33-af9d-a5624fd3f676")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "D2")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
 					(reference "D14")
@@ -2991,8 +5605,156 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 139.7 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c998e8bd-4fea-4f3e-894c-0751540ff9d8")
+		(property "Reference" "#PWR0105"
+			(at 139.7 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8039e3b4-c98c-4405-ae86-9c169512a98f")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 114.3 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbe2fe48-3e6e-4127-9010-1bd3376843cd")
+		(property "Reference" "R26"
+			(at 116.84 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 116.84 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 114.3 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "448a7513-1fa1-4acc-8735-3019594f0778")
+		)
+		(pin "1"
+			(uuid "e51315d9-d6b8-49f8-a01f-a29a42076924")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Snapeda:250-212")
-		(at 78.74 88.9 0)
+		(at 157.48 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3001,7 +5763,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf63ca10-8389-4bb8-855b-1a9b7bfef536")
 		(property "Reference" "X2"
-			(at 87.63 88.9 90)
+			(at 157.48 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3009,7 +5771,7 @@
 			)
 		)
 		(property "Value" "LED's"
-			(at 85.09 88.9 90)
+			(at 157.48 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,7 +5779,7 @@
 			)
 		)
 		(property "Footprint" "Snapeda:250-212_P-250-212"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3027,7 +5789,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3036,7 +5798,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3045,7 +5807,7 @@
 			)
 		)
 		(property "MF" "WAGO Innovative Connections"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3055,7 +5817,7 @@
 			)
 		)
 		(property "Description_1" "\n12 Position Wire to Board Terminal Block 45° (135°) Angle with Board 0.138 (3.50mm) Through Hole\n"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3065,7 +5827,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3075,7 +5837,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3085,7 +5847,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/250-212/WAGO/view-part/?ref=snap"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,7 +5857,7 @@
 			)
 		)
 		(property "MP" "250-212"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3105,7 +5867,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3115,7 +5877,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/250-212/WAGO/view-part/?ref=eda"
-			(at 78.74 88.9 0)
+			(at 157.48 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3161,6 +5923,12 @@
 			(uuid "9eae96f4-0481-4783-99d7-ebad21e74d63")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "X1")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
 					(reference "X2")
@@ -3171,7 +5939,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 158.75 67.31 270)
+		(at 140.97 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3179,8 +5947,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d0d1417d-0bb2-4a35-bd40-86d619ce21df")
-		(property "Reference" "R22"
-			(at 158.75 72.39 90)
+		(property "Reference" "R27"
+			(at 135.89 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3188,7 +5956,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 158.75 69.85 90)
+			(at 138.43 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3196,7 +5964,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 158.75 67.31 0)
+			(at 140.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3205,7 +5973,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 67.31 0)
+			(at 140.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3214,7 +5982,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 158.75 67.31 0)
+			(at 140.97 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3229,26 +5997,32 @@
 			(uuid "20acdcd7-23f5-46f2-bfb8-061b451beb78")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R2")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "R22")
+					(reference "R27")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:IRLZ34N")
-		(at 161.29 138.43 0)
+		(lib_id "Device:R_Small")
+		(at 105.41 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d70cb1dc-adf1-474a-a041-56e2ff6ee15c")
-		(property "Reference" "Q9"
-			(at 167.64 137.1599 0)
+		(uuid "d67dd3da-1458-4b49-97bf-00e67365e8e6")
+		(property "Reference" "R25"
+			(at 107.95 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3256,8 +6030,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLZ34N"
-			(at 167.64 139.6999 0)
+		(property "Value" "1k"
+			(at 107.95 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3265,8 +6039,236 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 166.37 140.335 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 105.41 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 105.41 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c930e771-88c6-47e6-989f-5b530f4f1bc1")
+		)
+		(pin "1"
+			(uuid "31eed45f-a6e2-43d8-8f3f-47202221f2fe")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 144.78 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0cd093c-20ab-48c9-9b57-b82c0fa2e613")
+		(property "Reference" "R32"
+			(at 147.32 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 147.32 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 144.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "99f6c653-1580-4d67-ab14-faa88e891633")
+		)
+		(pin "1"
+			(uuid "e0a48937-a186-4599-ac5a-7da8a7f041f2")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 193.04 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8c16758-5837-4f97-bfdf-7f7b9d74e990")
+		(property "Reference" "R38"
+			(at 195.58 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 195.58 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 193.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 193.04 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e70d3a3f-763c-4564-bea6-3d723718fe4f")
+		)
+		(pin "1"
+			(uuid "a1ce0166-6d01-4601-ae5b-837dfda17e31")
+		)
+		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:BSS214NW")
+		(at 111.76 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f974687a-f9f0-4e75-a684-c9cf7ab3bd5c")
+		(property "Reference" "Q4"
+			(at 118.11 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSS214NW"
+			(at 118.11 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+			(at 116.84 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,8 +6278,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/irlz34npbf.pdf?fileId=5546d462533600a40153567206892720"
-			(at 166.37 142.24 0)
+		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-BSS214NW-DS-v02_02-en.pdf?fileId=db3a30431b3e89eb011b695aebc01bde"
+			(at 116.84 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3286,8 +6288,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "30A Id, 55V Vds, 35mOhm Rds, N-Channel HEXFET Power MOSFET, TO-220AB"
-			(at 161.29 138.43 0)
+		(property "Description" "20V Vds, 1.5A Id, N-Channel MOSFET, SOT-323"
+			(at 111.76 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3296,35 +6298,59 @@
 			)
 		)
 		(pin "2"
-			(uuid "e4348a12-de4a-4a24-bdcf-93987828107e")
+			(uuid "b7db68c9-1d13-44bb-93f3-916cafe02086")
 		)
 		(pin "1"
-			(uuid "1bd91d9a-c3c6-4a6b-8f99-83b416620929")
+			(uuid "b2003e04-e531-4ff6-85cd-993772ace2af")
 		)
 		(pin "3"
-			(uuid "240540de-116b-49a8-ad0e-51712bfbd7a2")
+			(uuid "64c7e236-a77d-47e8-8ae9-3a2d92ed8742")
 		)
 		(instances
+			(project ""
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "Q9")
+					(reference "Q4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 168.91 36.83 90)
+		(lib_id "Device:R_Small")
+		(at 153.67 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e13bb3f2-7a7d-4084-91b9-2610f321351f")
-		(property "Reference" "#PWR052"
-			(at 175.26 36.83 0)
+		(uuid "fbbe990e-bccb-48ba-aa4a-a2074400dabe")
+		(property "Reference" "R34"
+			(at 156.21 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 156.21 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 153.67 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,16 +6358,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 173.99 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 36.83 0)
+		(property "Datasheet" "~"
+			(at 153.67 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3349,8 +6367,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 168.91 36.83 0)
+		(property "Description" "Resistor, small symbol"
+			(at 153.67 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3358,159 +6376,31 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "2e717cd5-312e-483e-b22a-fe09daf75b7a")
 		)
 		(pin "1"
-			(uuid "11ea0ac9-6060-4458-a0c6-027964ea0826")
+			(uuid "b42d0e33-94a4-4530-848c-cdb9df2566bf")
 		)
 		(instances
+			(project "led-driver"
+				(path "/a29932cc-7174-4e1d-aa48-7f02561fae40"
+					(reference "R12")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR052")
+					(reference "R34")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 152.4 87.63 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e481efc5-de08-4d1c-87fe-fe024e0931a1")
-		(property "Reference" "#PWR018"
-			(at 146.05 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5c5d5b04-f53f-473f-836e-b25576f63137")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 152.4 57.15 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6bcf52a-fa1b-4a01-a6df-78ca03f6361d")
-		(property "Reference" "#PWR014"
-			(at 146.05 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 57.1499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0d235af-8951-43a5-a5c2-662187b7c0c7")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/9806646f-89dc-464b-9788-5c73b38c3827"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
+	(embedded_fonts no)
 )

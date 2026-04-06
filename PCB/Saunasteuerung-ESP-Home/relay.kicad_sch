@@ -775,6 +775,338 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Relay:G2RL-1-E"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 11.43 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "G2RL-1-E"
+				(at 11.43 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Relay_THT:Relay_SPDT_Omron_G2RL-1-E"
+				(at 11.43 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "General Purpose Low Profile Relay SPDT Through Hole High Capacity, Omron G2RL series, 16A 250VAC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Single Pole Relay SPDT Omron High Capacity"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Relay?SPDT?Omron?G2RL*E*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "G2RL-1-E_0_0"
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "G2RL-1-E_0_1"
+				(rectangle
+					(start -10.16 5.08)
+					(end 10.16 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -8.255 1.905)
+					(end -1.905 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -1.905) (xy -2.54 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy 2.54 2.54) (xy 3.175 3.175) (xy 2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 3.175 3.81)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "G2RL-1-E_1_1"
+				(pin passive line
+					(at -5.08 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 7.62 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Relay:RAYEX-L90"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1161,528 +1493,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:SANYOU_SRD_Form_C"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "K"
-				(at 11.43 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SANYOU_SRD_Form_C"
-				(at 11.43 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
-				(at 11.43 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Single Pole Relay SPDT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Relay*SPDT*SANYOU*SRD*Series*Form*C*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SANYOU_SRD_Form_C_0_0"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 2.54) (xy 6.985 3.175) (xy 7.62 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SANYOU_SRD_Form_C_0_1"
-				(rectangle
-					(start -10.16 5.08)
-					(end 10.16 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -8.255 1.905)
-					(end -1.905 -1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -1.905) (xy -2.54 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -5.08 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 0) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 3.175 3.81)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SANYOU_SRD_Form_C_1_1"
-				(polyline
-					(pts
-						(xy 2.54 3.81) (xy 3.175 3.175) (xy 2.54 2.54) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at -5.08 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 90)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 7.62 270)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Samacsys:HB9500M-9.5-3P"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 16.51 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "HB9500M-9.5-3P"
-				(at 16.51 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "Samacsys:HB9500M953P"
-				(at 16.51 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/Ningbo-Kangnex-Elec-HB9500-3_C162697.pdf"
-				(at 16.51 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Barrier Block 3 3 0.374\"(9.50mm) 12-22 AWG P=9.5mm Barrier Terminal Blocks"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "13.2"
-				(at 16.51 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Ningbo Kangnex"
-				(at 16.51 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "HB9500M-9.5-3P"
-				(at 16.51 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 16.51 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 16.51 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 16.51 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 16.51 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "HB9500M-9.5-3P_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Samacsys:HB9500M-9.5-6P"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1917,199 +1727,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Transistor_BJT:2N3904"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "2N3904"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "NPN Transistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO?92*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "2N3904_0_1"
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "2N3904_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 5.715)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2541,6 +2158,12 @@
 		)
 	)
 	(junction
+		(at 213.36 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0541e040-8c62-4bad-934e-d232c1ad0dd9")
+	)
+	(junction
 		(at 144.78 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2553,10 +2176,22 @@
 		(uuid "08384eae-62ee-4495-ad65-68dea8a3a93d")
 	)
 	(junction
+		(at 92.71 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0dc2d1bb-cdf4-462e-bfc9-a69af057f249")
+	)
+	(junction
 		(at 92.71 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1454f1a1-d5d6-4eb5-99ca-3f965e77753e")
+	)
+	(junction
+		(at 144.78 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c2b368e-0eee-4211-86da-506e012876fc")
 	)
 	(junction
 		(at 92.71 96.52)
@@ -2565,16 +2200,16 @@
 		(uuid "1f089417-da27-43c8-bc74-e222746cb8ae")
 	)
 	(junction
-		(at 66.04 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f412010-9c73-45c7-a9fe-a348a8555706")
-	)
-	(junction
 		(at 144.78 17.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21c0fe28-d90f-4ca1-882f-105be0096142")
+	)
+	(junction
+		(at 114.3 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d1eaba5-bfed-413c-80dd-c4ebba3b63f0")
 	)
 	(junction
 		(at 92.71 25.4)
@@ -2601,19 +2236,13 @@
 		(uuid "4fd4c444-8d01-4552-a871-5c269326f8f9")
 	)
 	(junction
-		(at 171.45 152.4)
+		(at 144.78 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "561c9c3f-789f-498f-a6d0-04e9106ce657")
+		(uuid "59eee580-9c66-4c9d-ae86-b69a318bb059")
 	)
 	(junction
-		(at 66.04 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "567bdd16-bfee-4ea5-80a9-bb2340162847")
-	)
-	(junction
-		(at 171.45 154.94)
+		(at 213.36 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6a684d80-fdb6-417d-9882-08eee207e2ca")
@@ -2623,6 +2252,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7960a63b-d7aa-4ee9-8ef6-939a3e30f8b4")
+	)
+	(junction
+		(at 83.82 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91694a73-c228-4357-82c4-9938c6076e9e")
+	)
+	(junction
+		(at 62.23 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a56fdb5a-b815-46a6-97cc-98e89a62b9ba")
 	)
 	(junction
 		(at 163.83 77.47)
@@ -2635,6 +2276,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9be20c2-0041-4806-82b9-b3cbdc0ad733")
+	)
+	(junction
+		(at 144.78 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bffde828-924e-4042-bccb-8426adbb791c")
 	)
 	(junction
 		(at 163.83 41.91)
@@ -2655,22 +2302,28 @@
 		(uuid "c82fd00e-ae12-4534-a76f-4d1f1967b209")
 	)
 	(junction
-		(at 67.31 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cbe377e9-b6fd-4788-bc23-171b84210ba7")
-	)
-	(junction
 		(at 114.3 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdc010a4-858d-4396-bc3e-94dd9dbcecb1")
 	)
 	(junction
-		(at 67.31 138.43)
+		(at 114.3 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d206d930-fbe7-40f4-9ab5-db1e564ef7a0")
+		(uuid "d03ef85d-6a3d-446c-9c9f-9c0e034d4c0e")
+	)
+	(junction
+		(at 144.78 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3a18ef0-2a17-43b9-8c28-d79458c52392")
+	)
+	(junction
+		(at 114.3 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d71dc3c4-bb48-47b7-bbbd-0dcef8ebead5")
 	)
 	(junction
 		(at 144.78 20.32)
@@ -2679,22 +2332,44 @@
 		(uuid "d9c068c2-b5ab-426f-9b19-36ad474de8f6")
 	)
 	(junction
-		(at 67.31 124.46)
+		(at 114.3 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dae5e17c-ab9e-40a2-9d16-577362d8523e")
+		(uuid "ec0cd640-4006-4ba1-ac63-bec93b3b74af")
 	)
 	(junction
-		(at 66.04 162.56)
+		(at 133.35 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dcaa4424-984d-4c5d-a3d9-bd518f0b6de9")
+		(uuid "ee7b1a5c-857e-4aa3-bfaf-ce98cd64bcfd")
 	)
 	(junction
 		(at 114.3 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef466291-1bcf-4821-b506-97b41d858e10")
+	)
+	(no_connect
+		(at 171.45 54.61)
+		(uuid "29c530b0-07db-4e6e-ad98-f501d54dc9a6")
+	)
+	(no_connect
+		(at 171.45 19.05)
+		(uuid "d9a8f673-8158-4afe-8a46-ad67d1822435")
+	)
+	(no_connect
+		(at 171.45 90.17)
+		(uuid "e03f6633-51d4-4149-ae5a-73adefa384ba")
+	)
+	(wire
+		(pts
+			(xy 213.36 151.13) (xy 214.63 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0080f856-0dc6-4cdc-bb6c-876118a00659")
 	)
 	(wire
 		(pts
@@ -2718,13 +2393,53 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 176.53) (xy 66.04 176.53)
+			(xy 176.53 46.99) (xy 198.12 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "04ff6ec4-d184-49fc-b6d5-2ded822f9dac")
+		(uuid "0283798a-b65d-4e61-9b5f-f3138f6abff2")
+	)
+	(wire
+		(pts
+			(xy 114.3 176.53) (xy 133.35 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "029a1672-1ffe-4801-99c3-c8e13e492e09")
+	)
+	(wire
+		(pts
+			(xy 92.71 128.27) (xy 95.25 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02d892b1-5fee-42de-9aac-9b84dfbcada4")
+	)
+	(wire
+		(pts
+			(xy 213.36 148.59) (xy 214.63 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "062c2dc4-1a1d-47a3-936f-72ae8dec2d07")
+	)
+	(wire
+		(pts
+			(xy 69.85 160.02) (xy 76.2 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "066aa216-705a-4367-9ae6-824547a17123")
 	)
 	(wire
 		(pts
@@ -2748,36 +2463,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 116.84) (xy 86.36 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09f99393-bcbf-4bc6-873f-8224a63d4175")
-	)
-	(wire
-		(pts
-			(xy 67.31 153.67) (xy 64.77 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bff37e6-cba0-483e-befb-e53325d09377")
-	)
-	(wire
-		(pts
-			(xy 182.88 17.78) (xy 182.88 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c455a2c-18c1-476f-ad8a-93cd2d6f8218")
-	)
-	(wire
-		(pts
 			(xy 114.3 91.44) (xy 114.3 88.9)
 		)
 		(stroke
@@ -2788,13 +2473,23 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 161.29) (xy 139.7 161.29)
+			(xy 119.38 162.56) (xy 119.38 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "11a2ac7e-0a76-499f-823d-60ac145b0a73")
+		(uuid "0fe72023-bb26-4db5-80b4-95b8e2abadc1")
+	)
+	(wire
+		(pts
+			(xy 83.82 168.91) (xy 88.9 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10abac3a-bf11-4cfc-8205-697ae67c1cf2")
 	)
 	(wire
 		(pts
@@ -2808,33 +2503,33 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 52.07) (xy 198.12 52.07)
+			(xy 212.09 151.13) (xy 213.36 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "133f8ed6-eea7-4fb8-8935-5de0991a81cd")
+		(uuid "12578f83-43de-451b-b928-7b9a7bdebe0a")
 	)
 	(wire
 		(pts
-			(xy 189.23 125.73) (xy 189.23 118.11)
+			(xy 172.72 156.21) (xy 172.72 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14d6b185-2917-4be5-8bd0-e0c44365a943")
+		(uuid "16a9c911-e4c3-4909-9928-06ccf7930836")
 	)
 	(wire
 		(pts
-			(xy 54.61 184.15) (xy 58.42 184.15)
+			(xy 133.35 177.8) (xy 133.35 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "170f248f-6e27-4c96-995d-14a053e93359")
+		(uuid "16db9f6d-181e-426b-b946-cc49506ced89")
 	)
 	(wire
 		(pts
@@ -2858,63 +2553,73 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 191.77) (xy 63.5 191.77)
+			(xy 144.78 144.78) (xy 163.83 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1fa0e029-e5c2-4bb4-860b-9b4d8caf33e1")
+		(uuid "1c5c3e34-83f1-4a30-a188-eaa3517288b8")
 	)
 	(wire
 		(pts
-			(xy 173.99 113.03) (xy 194.31 113.03)
+			(xy 144.78 123.19) (xy 139.7 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20897a90-bf8b-490c-86a4-35a9200d7886")
+		(uuid "1dade9d4-c73f-4cb8-a248-7faf9df869c4")
 	)
 	(wire
 		(pts
-			(xy 66.04 189.23) (xy 66.04 191.77)
+			(xy 62.23 168.91) (xy 62.23 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20c74184-8744-4dc1-9526-b99aa9769bdc")
+		(uuid "1f51e236-ada8-464f-8b3a-7bfb098ad0cc")
 	)
 	(wire
 		(pts
-			(xy 191.77 120.65) (xy 194.31 120.65)
+			(xy 176.53 125.73) (xy 176.53 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "21d03eb9-7e26-462b-9dc5-24bf5a9ec5dd")
+		(uuid "20095643-fc2e-4294-bc1f-3c90f676a0f6")
 	)
 	(wire
 		(pts
-			(xy 130.81 158.75) (xy 139.7 158.75)
+			(xy 191.77 158.75) (xy 191.77 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "242577c2-0c38-4ab0-9a48-2ffe99c89b02")
+		(uuid "20e1fedb-46bd-4291-9100-d4344195d131")
 	)
 	(wire
 		(pts
-			(xy 67.31 151.13) (xy 67.31 153.67)
+			(xy 163.83 120.65) (xy 144.78 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24328363-64bf-42f6-9f96-78b4e2ef0816")
+		(uuid "24021f79-879e-49cb-8143-9f3d2aeabd7b")
+	)
+	(wire
+		(pts
+			(xy 30.48 160.02) (xy 33.02 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25fd3722-08cd-4437-a4dc-c36f0fb9479e")
 	)
 	(wire
 		(pts
@@ -2925,16 +2630,6 @@
 			(type default)
 		)
 		(uuid "26bc84c8-2fd8-408c-9341-fd0dd7a384d1")
-	)
-	(wire
-		(pts
-			(xy 90.17 160.02) (xy 90.17 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27a04076-d7c7-4cbc-a891-0b2051dff81b")
 	)
 	(wire
 		(pts
@@ -2968,6 +2663,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 172.72) (xy 119.38 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29838e3a-d81d-46a2-9fb3-f86b55caad84")
+	)
+	(wire
+		(pts
 			(xy 139.7 91.44) (xy 139.7 93.98)
 		)
 		(stroke
@@ -2978,33 +2683,43 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 90.17) (xy 171.45 85.09)
+			(xy 171.45 128.27) (xy 171.45 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b5a32e9-5c1a-401e-b915-74692a248723")
+		(uuid "2c56732b-6a77-440a-b833-3c3510339564")
 	)
 	(wire
 		(pts
-			(xy 77.47 176.53) (xy 66.04 176.53)
+			(xy 173.99 44.45) (xy 198.12 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "304b4dff-80a7-4d06-9537-0832d70220dd")
+		(uuid "2da22811-cd5b-48ad-a790-ded36afe599e")
 	)
 	(wire
 		(pts
-			(xy 78.74 138.43) (xy 67.31 138.43)
+			(xy 214.63 132.08) (xy 184.15 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "30dfa0c5-71aa-4f15-89a6-4f3c49407d4d")
+		(uuid "3111ce1b-829f-4dc2-a7de-6350f3820911")
+	)
+	(wire
+		(pts
+			(xy 189.23 156.21) (xy 189.23 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "329b3826-9e29-42b1-bc2b-5177ecf6470f")
 	)
 	(wire
 		(pts
@@ -3018,13 +2733,23 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 163.83) (xy 139.7 163.83)
+			(xy 186.69 137.16) (xy 214.63 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3467637f-dc9a-41ac-9336-c04c1557eacf")
+		(uuid "34be8a0c-e2b9-44c8-bc31-6991ee45f769")
+	)
+	(wire
+		(pts
+			(xy 184.15 132.08) (xy 184.15 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35c9703d-9671-402c-9ff0-dbab6f6c5a01")
 	)
 	(wire
 		(pts
@@ -3038,6 +2763,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 133.35) (xy 114.3 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "389b8a80-e29d-4bb5-a82e-aa0b4eac6608")
+	)
+	(wire
+		(pts
 			(xy 176.53 19.05) (xy 176.53 17.78)
 		)
 		(stroke
@@ -3045,6 +2780,26 @@
 			(type default)
 		)
 		(uuid "3a8a8466-2c2f-4d4a-890e-d0d6bd4c8f15")
+	)
+	(wire
+		(pts
+			(xy 198.12 54.61) (xy 187.96 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d7287e8-ef76-4bee-b503-6f569791b9b5")
+	)
+	(wire
+		(pts
+			(xy 200.66 123.19) (xy 200.66 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dc373e0-b2e2-446f-a9f1-a2eeabdfd9ac")
 	)
 	(wire
 		(pts
@@ -3058,17 +2813,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 146.05) (xy 50.8 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "400a364d-c08f-4249-8fe8-ae14b5e6ae43")
-	)
-	(wire
-		(pts
-			(xy 163.83 113.03) (xy 163.83 115.57)
+			(xy 163.83 113.03) (xy 163.83 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3078,13 +2823,13 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 120.65) (xy 78.74 121.92)
+			(xy 139.7 140.97) (xy 144.78 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40e9adad-0392-457f-992a-34fc5e927746")
+		(uuid "40510d03-01ca-451a-a4f0-3dfb5af5cbb2")
 	)
 	(wire
 		(pts
@@ -3098,6 +2843,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 160.02) (xy 62.23 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4295d463-86ad-4c03-a846-8cb71a8d0dde")
+	)
+	(wire
+		(pts
 			(xy 163.83 17.78) (xy 163.83 19.05)
 		)
 		(stroke
@@ -3108,33 +2863,23 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 138.43) (xy 99.06 125.73)
+			(xy 186.69 153.67) (xy 186.69 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "44d3688e-7834-41de-b651-9fec77a3e2c0")
+		(uuid "4446de0c-3002-4e37-a86b-87e999db991b")
 	)
 	(wire
 		(pts
-			(xy 171.45 85.09) (xy 186.69 85.09)
+			(xy 100.33 128.27) (xy 106.68 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45acf2c7-63d3-4aa0-b085-85902298d0d7")
-	)
-	(wire
-		(pts
-			(xy 176.53 54.61) (xy 176.53 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46a19abd-fad0-49be-a4ea-5d01b2eca5b3")
+		(uuid "46454569-55a1-464f-a2a5-38d9b1ecdee1")
 	)
 	(wire
 		(pts
@@ -3158,16 +2903,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 110.49) (xy 194.31 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48edd02d-cc7a-4c19-8cd8-6eea18d6b620")
-	)
-	(wire
-		(pts
 			(xy 176.53 90.17) (xy 176.53 87.63)
 		)
 		(stroke
@@ -3188,13 +2923,23 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 137.16) (xy 78.74 138.43)
+			(xy 163.83 143.51) (xy 163.83 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "49d8b543-6d3b-444a-8819-b2440b73bab1")
+	)
+	(wire
+		(pts
+			(xy 144.78 140.97) (xy 149.86 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b3ca250-d8a5-4c23-9b77-ea8d5132fd40")
 	)
 	(wire
 		(pts
@@ -3228,6 +2973,26 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 130.81) (xy 149.86 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ead3294-569a-4d15-bcd5-2d3713109401")
+	)
+	(wire
+		(pts
+			(xy 213.36 151.13) (xy 213.36 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5143afa5-ff66-4196-a8bf-90d0ca864034")
+	)
+	(wire
+		(pts
 			(xy 144.78 38.1) (xy 144.78 41.91)
 		)
 		(stroke
@@ -3235,16 +3000,6 @@
 			(type default)
 		)
 		(uuid "52e27309-cebf-45ff-8c19-f007d948e013")
-	)
-	(wire
-		(pts
-			(xy 194.31 115.57) (xy 186.69 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "540412a2-f772-46c1-84ad-f02faab50081")
 	)
 	(wire
 		(pts
@@ -3268,37 +3023,47 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 132.08) (xy 49.53 146.05)
+			(xy 92.71 137.16) (xy 92.71 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "57bac182-5ea3-4b69-96fb-87ae6633ae6b")
+		(uuid "55522ea5-9363-442d-aa38-69f4b9368c13")
 	)
 	(wire
 		(pts
-			(xy 58.42 137.16) (xy 58.42 138.43)
+			(xy 114.3 172.72) (xy 114.3 176.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59cb87e5-53f8-49fc-8eea-617b9c778879")
+		(uuid "562adebe-47f9-4222-8830-67520184590a")
 	)
 	(wire
 		(pts
-			(xy 67.31 120.65) (xy 78.74 120.65)
+			(xy 133.35 152.4) (xy 133.35 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a05cad7-0cc7-4bdf-8c8b-2a163edd3dd0")
+		(uuid "56381db3-a252-49a2-949d-8c8d2d5731e6")
 	)
 	(wire
 		(pts
-			(xy 77.47 175.26) (xy 77.47 176.53)
+			(xy 200.66 134.62) (xy 214.63 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56922b56-5fb3-42d4-8bc2-980d470c6df9")
+	)
+	(wire
+		(pts
+			(xy 133.35 175.26) (xy 133.35 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3308,23 +3073,43 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 123.19) (xy 104.14 123.19)
+			(xy 114.3 172.72) (xy 119.38 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a4728b8-2d85-4b21-b758-840400dca594")
+		(uuid "5a796582-d900-4f2c-82a8-2c75bdff1cbd")
 	)
 	(wire
 		(pts
-			(xy 173.99 39.37) (xy 173.99 46.99)
+			(xy 173.99 39.37) (xy 173.99 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5b145901-0753-41c8-b9cf-a67ef97f8a5f")
+	)
+	(wire
+		(pts
+			(xy 119.38 154.94) (xy 114.3 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d2f565b-1342-44cf-a201-c8c448ae8271")
+	)
+	(wire
+		(pts
+			(xy 182.88 17.78) (xy 182.88 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eacd27f-410d-4da1-a45b-1f539f9f3eb9")
 	)
 	(wire
 		(pts
@@ -3338,33 +3123,23 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 77.47) (xy 182.88 54.61)
+			(xy 21.59 160.02) (xy 25.4 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60dc3124-8672-46c6-a9e6-429387b09b81")
+		(uuid "603fc2cc-103e-49b9-9109-bead5ca9650e")
 	)
 	(wire
 		(pts
-			(xy 48.26 184.15) (xy 49.53 184.15)
+			(xy 114.3 154.94) (xy 109.22 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "60eddaa6-caaa-4853-9086-bfd0435280e7")
-	)
-	(wire
-		(pts
-			(xy 85.09 156.21) (xy 139.7 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "622bd816-675a-477f-ac6f-5bfb32727cae")
+		(uuid "621b5933-cfb8-4d0f-ab35-ad937187cfd5")
 	)
 	(wire
 		(pts
@@ -3375,6 +3150,26 @@
 			(type default)
 		)
 		(uuid "63065023-09fa-4ff1-8697-1b4920f61372")
+	)
+	(wire
+		(pts
+			(xy 78.74 133.35) (xy 81.28 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631cc966-d800-4172-8e10-62d21540a830")
+	)
+	(wire
+		(pts
+			(xy 114.3 120.65) (xy 144.78 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63857885-0664-4cc1-b3ba-112d22ec0e71")
 	)
 	(wire
 		(pts
@@ -3398,13 +3193,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 151.13) (xy 139.7 151.13)
+			(xy 191.77 142.24) (xy 214.63 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65233f53-9de5-4d3b-a555-b10edf20dde8")
+		(uuid "6532e44d-6212-47fd-bf9b-c37dbd53aaa6")
 	)
 	(wire
 		(pts
@@ -3418,33 +3213,23 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 162.56) (xy 66.04 162.56)
+			(xy 146.05 158.75) (xy 191.77 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "68e9d9f1-866d-43d5-8cf1-887cf578d9ab")
+		(uuid "6889feaf-a376-48bf-874b-0d67acc09b33")
 	)
 	(wire
 		(pts
-			(xy 171.45 152.4) (xy 175.26 152.4)
+			(xy 213.36 156.21) (xy 214.63 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6a668a71-93b6-4f27-b935-655ae46313cd")
-	)
-	(wire
-		(pts
-			(xy 63.5 120.65) (xy 67.31 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ec06fa5-0383-4768-a0b6-f9f881dda45b")
 	)
 	(wire
 		(pts
@@ -3455,6 +3240,16 @@
 			(type default)
 		)
 		(uuid "704326d7-ec2e-4095-af1e-add1698fd2b3")
+	)
+	(wire
+		(pts
+			(xy 62.23 133.35) (xy 63.5 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7194ee0a-bfdf-4042-9d34-d35802c58e6e")
 	)
 	(wire
 		(pts
@@ -3478,7 +3273,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 157.48) (xy 171.45 154.94)
+			(xy 213.36 161.29) (xy 213.36 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3508,7 +3303,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 175.26) (xy 87.63 177.8)
+			(xy 143.51 175.26) (xy 143.51 177.8)
 		)
 		(stroke
 			(width 0)
@@ -3518,7 +3313,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 157.48) (xy 171.45 157.48)
+			(xy 214.63 161.29) (xy 213.36 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3528,33 +3323,13 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 107.95) (xy 194.31 107.95)
+			(xy 185.42 87.63) (xy 185.42 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "76aff55c-5cff-4ebb-b4be-b523f7a48079")
-	)
-	(wire
-		(pts
-			(xy 58.42 138.43) (xy 67.31 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7701719b-a3f6-4d05-8aeb-367ca4b19ae5")
-	)
-	(wire
-		(pts
-			(xy 104.14 119.38) (xy 104.14 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "797617e0-bd9f-4165-973b-88782bfadeef")
+		(uuid "79da8742-b85e-478d-8992-26787dc6f0cb")
 	)
 	(wire
 		(pts
@@ -3568,6 +3343,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 49.53) (xy 198.12 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b61d687-d093-4d9c-8f78-1314ba6c749e")
+	)
+	(wire
+		(pts
 			(xy 144.78 113.03) (xy 163.83 113.03)
 		)
 		(stroke
@@ -3578,33 +3363,23 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 158.75) (xy 66.04 162.56)
+			(xy 69.85 168.91) (xy 83.82 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7d353dbf-95ed-4db5-afe7-4ebac6712d28")
+		(uuid "7cee2f64-66db-4bb6-ac58-e5021f93d63c")
 	)
 	(wire
 		(pts
-			(xy 191.77 128.27) (xy 191.77 120.65)
+			(xy 172.72 156.21) (xy 189.23 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7d58c2bb-dc10-421a-ba9c-59f9247663fe")
-	)
-	(wire
-		(pts
-			(xy 101.6 128.27) (xy 191.77 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f82637c-d0d7-456e-a92f-2d2dfd121a6c")
+		(uuid "7d97fd48-d049-40e8-b53e-ab4301a75d03")
 	)
 	(wire
 		(pts
@@ -3628,6 +3403,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 140.97) (xy 139.7 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "811dcb35-40f4-4225-89bd-bd775dfa6041")
+	)
+	(wire
+		(pts
+			(xy 181.61 92.71) (xy 187.96 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "822c3897-ab2f-4271-ae9a-0fd1aea60dde")
+	)
+	(wire
+		(pts
 			(xy 149.86 91.44) (xy 144.78 91.44)
 		)
 		(stroke
@@ -3635,16 +3430,6 @@
 			(type default)
 		)
 		(uuid "8245f7f9-7808-4597-b191-626e531e383e")
-	)
-	(wire
-		(pts
-			(xy 186.69 15.24) (xy 171.45 15.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "825439ed-164a-4ff8-ac14-e1402be2086b")
 	)
 	(wire
 		(pts
@@ -3658,23 +3443,13 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 154.94) (xy 171.45 152.4)
+			(xy 213.36 158.75) (xy 213.36 156.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8344db4e-f9d5-49b5-8c24-0d88404cd348")
-	)
-	(wire
-		(pts
-			(xy 198.12 49.53) (xy 171.45 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "836f2c4f-974e-4838-addd-849f77aafc36")
 	)
 	(wire
 		(pts
@@ -3688,13 +3463,13 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 115.57) (xy 186.69 123.19)
+			(xy 60.96 128.27) (xy 63.5 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "852a88ba-30f4-4c0f-9755-cbfe3eacf9dc")
+		(uuid "85105d03-c21f-407f-9d27-1f84da89e8b9")
 	)
 	(wire
 		(pts
@@ -3708,7 +3483,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 137.16) (xy 88.9 138.43)
+			(xy 173.99 143.51) (xy 173.99 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3748,6 +3523,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 125.73) (xy 214.63 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "897fafed-40c9-4700-85b5-c3cdb41630da")
+	)
+	(wire
+		(pts
 			(xy 92.71 25.4) (xy 95.25 25.4)
 		)
 		(stroke
@@ -3758,7 +3543,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 138.43) (xy 99.06 138.43)
+			(xy 173.99 144.78) (xy 184.15 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3788,23 +3573,43 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 116.84) (xy 86.36 116.84)
+			(xy 187.96 54.61) (xy 187.96 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8fe402a4-96cd-4f31-850f-8fc5c14aab8a")
+		(uuid "8f3050ca-1023-40e4-967a-96939f650e25")
 	)
 	(wire
 		(pts
-			(xy 176.53 87.63) (xy 181.61 87.63)
+			(xy 176.53 87.63) (xy 185.42 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "903fc122-a666-451b-b680-a45a0c3de732")
+	)
+	(wire
+		(pts
+			(xy 48.26 165.1) (xy 50.8 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91a70e96-46d5-4a72-aaf7-75f78bd7873e")
+	)
+	(wire
+		(pts
+			(xy 146.05 158.75) (xy 146.05 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91c960ef-a22f-429b-9f63-98d776b0d075")
 	)
 	(wire
 		(pts
@@ -3818,6 +3623,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 120.65) (xy 163.83 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95d5ec68-3a14-4fd1-8a80-d7d109be34c6")
+	)
+	(wire
+		(pts
 			(xy 139.7 73.66) (xy 139.7 71.12)
 		)
 		(stroke
@@ -3828,33 +3643,13 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 87.63) (xy 181.61 110.49)
+			(xy 114.3 123.19) (xy 114.3 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "966f04ea-4819-460b-99b6-63848a9d6d8f")
-	)
-	(wire
-		(pts
-			(xy 66.04 176.53) (xy 66.04 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a4f0db6-94ba-4538-8cc5-97511a396f04")
-	)
-	(wire
-		(pts
-			(xy 198.12 41.91) (xy 186.69 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c37660d-11f3-4a15-9a8b-c5334b891e15")
+		(uuid "9ced709d-627d-4ca9-b624-c9811e244149")
 	)
 	(wire
 		(pts
@@ -3868,6 +3663,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 153.67) (xy 186.69 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ddb75f2-4106-4924-bc23-8e4d17cf085a")
+	)
+	(wire
+		(pts
 			(xy 144.78 88.9) (xy 163.83 88.9)
 		)
 		(stroke
@@ -3878,6 +3683,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 52.07) (xy 198.12 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a14cf415-891a-4463-95c1-438c939e8533")
+	)
+	(wire
+		(pts
 			(xy 144.78 73.66) (xy 149.86 73.66)
 		)
 		(stroke
@@ -3885,16 +3700,6 @@
 			(type default)
 		)
 		(uuid "a1d4c416-6b6f-4c49-839b-d5688190dd37")
-	)
-	(wire
-		(pts
-			(xy 186.69 85.09) (xy 186.69 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1ecaaff-ea92-4a14-9bc4-14a1a0433d15")
 	)
 	(wire
 		(pts
@@ -3918,13 +3723,13 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 158.75) (xy 66.04 158.75)
+			(xy 100.33 137.16) (xy 114.3 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a378665d-c0cb-4be0-bec9-97c90be66ad6")
+		(uuid "a43748d1-af45-4a95-9188-ce5d76ed1a58")
 	)
 	(wire
 		(pts
@@ -3938,43 +3743,13 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 158.75) (xy 77.47 158.75)
+			(xy 95.25 137.16) (xy 92.71 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a9590e55-bdb2-4f05-9cc7-573bcc16dc88")
-	)
-	(wire
-		(pts
-			(xy 77.47 158.75) (xy 77.47 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9af856d-cb7d-4d65-a083-92283c402fa4")
-	)
-	(wire
-		(pts
-			(xy 182.88 44.45) (xy 198.12 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9d46ee7-acb0-45af-867e-1c27dc626895")
-	)
-	(wire
-		(pts
-			(xy 171.45 49.53) (xy 171.45 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab4647ca-efb3-4d9a-9005-bdbbc1593386")
+		(uuid "aa172197-9cca-44b1-a9c7-1a916ef51a40")
 	)
 	(wire
 		(pts
@@ -3988,16 +3763,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 146.05) (xy 59.69 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad13a419-4274-4b4e-9a43-39625c35b677")
-	)
-	(wire
-		(pts
 			(xy 114.3 69.85) (xy 119.38 69.85)
 		)
 		(stroke
@@ -4005,16 +3770,6 @@
 			(type default)
 		)
 		(uuid "ad6bb7a2-f815-436f-ae24-c2eb4ac3925d")
-	)
-	(wire
-		(pts
-			(xy 99.06 125.73) (xy 189.23 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad7a27a6-f7eb-4597-9f15-acba0514842f")
 	)
 	(wire
 		(pts
@@ -4038,6 +3793,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 113.03) (xy 181.61 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6568573-c8ca-4de1-8375-17b6b65f6968")
+	)
+	(wire
+		(pts
 			(xy 149.86 63.5) (xy 149.86 55.88)
 		)
 		(stroke
@@ -4045,6 +3810,16 @@
 			(type default)
 		)
 		(uuid "b65708a1-4b6d-462d-8f9f-26d400ef8166")
+	)
+	(wire
+		(pts
+			(xy 182.88 49.53) (xy 182.88 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6858c38-610e-4650-bb4d-e2e2fb24ab3d")
 	)
 	(wire
 		(pts
@@ -4068,43 +3843,43 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 177.8) (xy 116.84 153.67)
+			(xy 182.88 41.91) (xy 198.12 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bbd43a6b-8082-49c5-87ca-928b94d7fd65")
+		(uuid "ba7c1c85-de7f-4249-9483-f497faae4b6f")
 	)
 	(wire
 		(pts
-			(xy 67.31 120.65) (xy 67.31 124.46)
+			(xy 144.78 120.65) (xy 144.78 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bdd1a0c8-65bc-4590-b5d6-8c167d0c19ad")
+		(uuid "bcf9a01f-22a3-48de-af22-64a172be351f")
 	)
 	(wire
 		(pts
-			(xy 175.26 154.94) (xy 171.45 154.94)
+			(xy 52.07 128.27) (xy 55.88 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf47e47d-2e2d-4107-8dc7-5167c1ffc047")
+	)
+	(wire
+		(pts
+			(xy 214.63 158.75) (xy 213.36 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bf565da5-5cb7-4495-a7d7-0e4e7266359f")
-	)
-	(wire
-		(pts
-			(xy 189.23 118.11) (xy 194.31 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfc74c50-f7b1-421c-96a3-24726f999b92")
 	)
 	(wire
 		(pts
@@ -4128,26 +3903,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 153.67) (xy 139.7 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c26b7875-1ee1-484b-b547-97949a45132f")
-	)
-	(wire
-		(pts
-			(xy 67.31 133.35) (xy 67.31 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2975606-ea65-45eb-9601-a7b855f5fea3")
-	)
-	(wire
-		(pts
 			(xy 176.53 17.78) (xy 182.88 17.78)
 		)
 		(stroke
@@ -4158,13 +3913,33 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 128.27) (xy 101.6 116.84)
+			(xy 109.22 172.72) (xy 109.22 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c4316943-bda2-4bc1-8b99-88c72492e419")
+		(uuid "c3b30b2b-9902-4ebe-aa78-b7de5b65f5ee")
+	)
+	(wire
+		(pts
+			(xy 189.23 139.7) (xy 214.63 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5c2863d-167b-40cb-9afa-a925fa51c031")
+	)
+	(wire
+		(pts
+			(xy 78.74 128.27) (xy 92.71 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c67198b9-0b2d-4b2b-8e7a-166e5b52b864")
 	)
 	(wire
 		(pts
@@ -4198,16 +3973,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 124.46) (xy 67.31 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc11a348-b07e-464d-a1ba-c0fda8c9676d")
-	)
-	(wire
-		(pts
 			(xy 149.86 109.22) (xy 149.86 106.68)
 		)
 		(stroke
@@ -4218,13 +3983,13 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 170.18) (xy 48.26 184.15)
+			(xy 176.53 46.99) (xy 176.53 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cde00365-1fc9-4452-9046-86b77bb70f0d")
+		(uuid "ccdabaf6-66ca-4da7-ac61-e2676bbaf577")
 	)
 	(wire
 		(pts
@@ -4235,16 +4000,6 @@
 			(type default)
 		)
 		(uuid "cf0c0786-e786-450b-b1ea-0eba24e2b7bd")
-	)
-	(wire
-		(pts
-			(xy 58.42 124.46) (xy 67.31 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d07e0f1c-26ff-4ed9-855b-172f683dbdcf")
 	)
 	(wire
 		(pts
@@ -4268,13 +4023,63 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 160.02) (xy 85.09 156.21)
+			(xy 83.82 152.4) (xy 114.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1fe8e26-b0db-42cc-87b6-4c0b4ada4773")
+	)
+	(wire
+		(pts
+			(xy 83.82 165.1) (xy 83.82 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3efda77-8d1a-4a54-9bfc-c31681025f4f")
+	)
+	(wire
+		(pts
+			(xy 114.3 137.16) (xy 119.38 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d457d9ec-3c99-4e38-83e8-ad3710108c59")
+	)
+	(wire
+		(pts
+			(xy 133.35 152.4) (xy 114.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4720ba2-2794-46f7-b534-3179a98b2e14")
+	)
+	(wire
+		(pts
+			(xy 140.97 153.67) (xy 140.97 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d6e62c9a-d6b6-4aa8-ba16-b4d70a860728")
+	)
+	(wire
+		(pts
+			(xy 140.97 144.78) (xy 144.78 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7bcbd25-24f9-4a03-8497-8542b5b9b5ee")
 	)
 	(wire
 		(pts
@@ -4298,23 +4103,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 138.43) (xy 67.31 140.97)
+			(xy 213.36 151.13) (xy 213.36 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d996622a-095f-4537-8b54-d4848c862881")
-	)
-	(wire
-		(pts
-			(xy 173.99 46.99) (xy 198.12 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da8f923e-6d1d-429a-b293-fea548c2b6d9")
+		(uuid "db600887-0020-4b10-8124-3bcfaed75bf6")
 	)
 	(wire
 		(pts
@@ -4328,23 +4123,23 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 162.56) (xy 66.04 163.83)
+			(xy 214.63 153.67) (xy 213.36 153.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df50f323-69b8-4c20-a2a9-8f58a4b2e3bd")
+		(uuid "df2c9d11-6d74-4555-8644-756b505850b5")
 	)
 	(wire
 		(pts
-			(xy 66.04 171.45) (xy 66.04 176.53)
+			(xy 144.78 140.97) (xy 144.78 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dfd90284-3af6-47c4-9daa-a317900f74f0")
+		(uuid "dff867a4-c065-4b51-95f5-0dbbf1e24fb2")
 	)
 	(wire
 		(pts
@@ -4358,33 +4153,53 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 15.24) (xy 171.45 19.05)
+			(xy 171.45 123.19) (xy 200.66 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e314a6c9-66aa-47f0-92aa-f707bd1befec")
+		(uuid "e032660a-23f8-42ff-aaa9-94852f266bcb")
 	)
 	(wire
 		(pts
-			(xy 182.88 54.61) (xy 198.12 54.61)
+			(xy 64.77 168.91) (xy 62.23 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e39f2242-bb89-4c52-b7e2-3e7f50f3aa2e")
+		(uuid "e133aaf6-1cac-45ec-b809-feb5576a9e68")
 	)
 	(wire
 		(pts
-			(xy 186.69 15.24) (xy 186.69 41.91)
+			(xy 109.22 172.72) (xy 114.3 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e7099c00-00ea-41cb-906a-b201218130b4")
+		(uuid "e164285d-6986-409c-b538-7b783418e13a")
+	)
+	(wire
+		(pts
+			(xy 62.23 160.02) (xy 64.77 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e17a8532-01bf-4133-9f83-7c1e878809a5")
+	)
+	(wire
+		(pts
+			(xy 114.3 152.4) (xy 114.3 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5568500-14b6-4cea-b343-01a216cea3cf")
 	)
 	(wire
 		(pts
@@ -4405,6 +4220,16 @@
 			(type default)
 		)
 		(uuid "e9b7cd56-9b2b-455d-9028-d6d1226c9e99")
+	)
+	(wire
+		(pts
+			(xy 139.7 123.19) (xy 139.7 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea1c9e6c-71c9-4127-8526-e449df5cb1e5")
 	)
 	(wire
 		(pts
@@ -4438,7 +4263,27 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 152.4) (xy 171.45 152.4)
+			(xy 149.86 123.19) (xy 144.78 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed251161-4fb4-4b3e-a18e-cb9ed615bd8a")
+	)
+	(wire
+		(pts
+			(xy 214.63 125.73) (xy 214.63 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edacb396-1786-45f1-870d-ba5f831f29aa")
+	)
+	(wire
+		(pts
+			(xy 212.09 158.75) (xy 213.36 158.75)
 		)
 		(stroke
 			(width 0)
@@ -4458,7 +4303,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 177.8) (xy 116.84 177.8)
+			(xy 143.51 177.8) (xy 172.72 177.8)
 		)
 		(stroke
 			(width 0)
@@ -4478,16 +4323,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 119.38) (xy 104.14 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f26b09ca-d4fd-455f-9634-c5ade905b67f")
-	)
-	(wire
-		(pts
 			(xy 144.78 109.22) (xy 149.86 109.22)
 		)
 		(stroke
@@ -4495,6 +4330,16 @@
 			(type default)
 		)
 		(uuid "f49de1b8-1704-4860-a4a7-fff101a2d85a")
+	)
+	(wire
+		(pts
+			(xy 83.82 154.94) (xy 83.82 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6cbd8f0-a603-48d5-a885-a80c52a4f595")
 	)
 	(wire
 		(pts
@@ -4508,16 +4353,6 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 121.92) (xy 91.44 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9665714-5328-41ec-96a6-f7330f157f16")
-	)
-	(wire
-		(pts
 			(xy 144.78 55.88) (xy 139.7 55.88)
 		)
 		(stroke
@@ -4528,35 +4363,43 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 175.26) (xy 57.15 176.53)
+			(xy 181.61 113.03) (xy 181.61 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd7dafa4-173f-441c-8acb-ee92a6f43ea6")
+		(uuid "fb09a359-5c60-42dd-b248-fd0132791928")
 	)
-	(global_label "SIG-RELAY5"
-		(shape input)
-		(at 48.26 170.18 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
+	(wire
+		(pts
+			(xy 109.22 154.94) (xy 109.22 157.48)
 		)
-		(uuid "1123dd14-9db9-4dca-855c-825ee68038bc")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.26 155.7043 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
+		(stroke
+			(width 0)
+			(type default)
 		)
+		(uuid "fce358bd-ff67-431b-bc49-b4fab3a892f4")
+	)
+	(wire
+		(pts
+			(xy 31.75 165.1) (xy 33.02 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdd08348-f3cc-498b-a15a-1275053d3e64")
+	)
+	(wire
+		(pts
+			(xy 149.86 140.97) (xy 149.86 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff29df96-dd62-4e05-b5e2-6773f85df9c2")
 	)
 	(global_label "SIG-RELAY1"
 		(shape input)
@@ -4602,31 +4445,9 @@
 			)
 		)
 	)
-	(global_label "N"
-		(shape input)
-		(at 130.81 158.75 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "48f9e878-db91-421b-84bf-f7ac03ef83dd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4943 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "L1"
 		(shape input)
-		(at 173.99 46.99 180)
+		(at 173.99 44.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4636,7 +4457,7 @@
 		)
 		(uuid "57db11b8-7dc8-4408-862d-7065fe2b2d93")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 168.7672 46.99 0)
+			(at 168.7672 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4648,7 +4469,7 @@
 	)
 	(global_label "N"
 		(shape input)
-		(at 130.81 163.83 180)
+		(at 212.09 151.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4656,9 +4477,31 @@
 			)
 			(justify right)
 		)
-		(uuid "914f92fb-aae1-4003-b68b-da441cadbe7f")
+		(uuid "5e40c0eb-0c0b-40c1-abcd-a4210c9aefdb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4943 163.83 0)
+			(at 207.7743 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SIG-RELAY4"
+		(shape input)
+		(at 62.23 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "77e2d3a2-1255-4da9-9a63-6416de41b32a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.7543 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4692,7 +4535,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 166.37 152.4 180)
+		(at 212.09 158.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4702,7 +4545,7 @@
 		)
 		(uuid "c0ecab50-8f3e-4ce9-95eb-d9665e2f877c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.5143 152.4 0)
+			(at 205.2343 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4712,9 +4555,9 @@
 			)
 		)
 	)
-	(global_label "N"
+	(global_label "SIG-RELAY5"
 		(shape input)
-		(at 130.81 161.29 180)
+		(at 31.75 165.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4722,9 +4565,9 @@
 			)
 			(justify right)
 		)
-		(uuid "c7a3ae42-9d4a-45c7-9ef0-3eb6489e07a3")
+		(uuid "c1d0c129-039a-4189-ace6-60e14764e43d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.4943 161.29 0)
+			(at 17.2743 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4734,25 +4577,76 @@
 			)
 		)
 	)
-	(global_label "SIG-RELAY4"
-		(shape input)
-		(at 49.53 132.08 90)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cff6307f-7c16-4a48-80b9-a3e7257b56b5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 49.53 117.6043 90)
+		(uuid "017c7952-a8b8-4e4a-a7c3-4b252a47d281")
+		(property "Reference" "#PWR07"
+			(at 87.63 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 133.3499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef3b9598-8231-4d0e-89a6-c8a552e9cd0b")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "#PWR07")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4814,6 +4708,12 @@
 			(uuid "b3fa11ca-3383-400a-8ff3-5e28df75c896")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR016")
@@ -4882,6 +4782,12 @@
 			(uuid "0949eaca-8f00-4c6e-a5bc-b8974ad0b8a8")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R17")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R11")
@@ -4950,6 +4856,12 @@
 			(uuid "75ae7f82-e9a5-4d35-851e-3a160784ad0e")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R15")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R7")
@@ -4959,42 +4871,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 57.15 171.45 90)
+		(lib_id "Diode:1N4148W")
+		(at 119.38 166.37 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "19fa6317-9f93-4c56-9101-f15658af825a")
-		(property "Reference" "D9"
-			(at 50.8 173.0375 0)
+		(uuid "0d244f00-277d-4da9-882b-c6dbdcaae7bf")
+		(property "Reference" "D8"
+			(at 113.03 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 53.34 173.0375 0)
+		(property "Value" "1N4148W"
+			(at 115.57 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 57.15 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 171.45 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 114.935 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5002,8 +4905,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 57.15 171.45 0)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 119.38 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5011,16 +4914,49 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "18f36e61-448c-4cc4-9696-ef00eda260cf")
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 119.38 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.38 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "808c9528-fe65-426a-9ee0-5631780583f3")
+			(uuid "de811bca-dfb3-4f86-b483-ff7918cd3b80")
+		)
+		(pin "1"
+			(uuid "be80d0fc-f6e3-47ac-8151-ce0c8d4919d1")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D4")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "D9")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -5085,77 +5021,15 @@
 			(uuid "43f9c339-cae7-4fd8-8f9e-5f88cc678b49")
 		)
 		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "#PWR08")
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 58.42 127 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20dc540c-234a-4876-8eff-cb2530a2f739")
-		(property "Reference" "R17"
-			(at 53.34 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 55.88 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 58.42 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 58.42 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9767c142-56ea-4d81-8c5b-f7e7d5c2c5eb")
-		)
-		(pin "1"
-			(uuid "3d136d62-3294-46aa-ab18-eff195d36c00")
-		)
-		(instances
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "R17")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5221,6 +5095,12 @@
 			(uuid "c745cf84-0a44-4723-9385-10ddd0b0f2fa")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R12")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R1")
@@ -5289,9 +5169,101 @@
 			(uuid "c2d67a57-bfc9-445b-a7d6-d6deaca8c25d")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R16")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:G2RL-1-E")
+		(at 138.43 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "328f744d-dd89-4681-8bb5-d382d310f732")
+		(property "Reference" "K5"
+			(at 149.86 166.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "G2RL-1-E"
+			(at 149.86 168.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_Omron_G2RL-1-E"
+			(at 149.86 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
+			(at 138.43 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose Low Profile Relay SPDT Through Hole High Capacity, Omron G2RL series, 16A 250VAC"
+			(at 138.43 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "6282d0db-2e6f-40db-adee-91ff2880153f")
+		)
+		(pin "A1"
+			(uuid "034c2ef4-512f-4ea1-b24e-87fc742e11f5")
+		)
+		(pin "A2"
+			(uuid "2a7a2af8-8145-48ae-a024-da6afd946d29")
+		)
+		(pin "11"
+			(uuid "9e990af4-29d3-4c8e-b37a-7551624f9e1a")
+		)
+		(pin "14"
+			(uuid "88dcb2e7-8944-47ad-aa14-7be57ae82a94")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "K1")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "K5")
 					(unit 1)
 				)
 			)
@@ -5375,6 +5347,12 @@
 			(uuid "44dab48a-52c0-435a-8cb9-ba5365bfc260")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D8")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "D1")
@@ -5461,6 +5439,12 @@
 			(uuid "01a5f362-27d0-4723-895b-c559abe8f378")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D9")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "D4")
@@ -5528,6 +5512,12 @@
 			(uuid "254d5be6-ccbd-4160-a4ac-b627990c4c3f")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR01")
@@ -5595,9 +5585,101 @@
 			(uuid "9f39445d-c45d-4065-9171-887e62629cec")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Relay:G2RL-1-E")
+		(at 168.91 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39af151f-1cb7-44f7-92ed-a5bf408b2496")
+		(property "Reference" "K4"
+			(at 180.34 134.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "G2RL-1-E"
+			(at 180.34 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Relay_THT:Relay_SPDT_Omron_G2RL-1-E"
+			(at 180.34 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2rl.pdf"
+			(at 168.91 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "General Purpose Low Profile Relay SPDT Through Hole High Capacity, Omron G2RL series, 16A 250VAC"
+			(at 168.91 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "e9ada64c-53e2-4455-8ea3-c5a1ebd8b11e")
+		)
+		(pin "A1"
+			(uuid "ac49bd77-1ff3-4b07-9cad-16096e2b7a49")
+		)
+		(pin "A2"
+			(uuid "2ce6ac9a-839e-44ea-b576-9c9b84174d8d")
+		)
+		(pin "11"
+			(uuid "cb6acdb7-4b67-47d0-8d2c-b2ff12fadba4")
+		)
+		(pin "14"
+			(uuid "c83c4f95-4bb3-4d0b-b0dd-c1f97dbcbd4c")
+		)
+		(instances
+			(project ""
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "K6")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "K4")
 					(unit 1)
 				)
 			)
@@ -5663,6 +5745,12 @@
 			(uuid "6819d108-b469-4ee7-9896-0f8503862e83")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R14")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R6")
@@ -5739,6 +5827,12 @@
 			(uuid "106cf277-671d-4817-ae09-77b6d5992188")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "U5")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "U3")
@@ -5748,17 +5842,89 @@
 		)
 	)
 	(symbol
-		(lib_id "Samacsys:HB9500M-9.5-6P")
-		(at 194.31 107.95 0)
+		(lib_id "power:+5V")
+		(at 119.38 137.16 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+		(uuid "41b28041-e78d-47c8-a431-aded7f6c98e8")
+		(property "Reference" "#PWR064"
+			(at 115.57 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 123.19 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 119.38 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d345ec0d-5529-4314-8a1b-47b9c6922a5c")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Samacsys:HB9500M-9.5-6P")
+		(at 214.63 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "430ebbcc-40dc-461b-84c1-027293ad12a8")
 		(property "Reference" "J2"
-			(at 203.1999 104.14 90)
+			(at 231.394 144.272 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5767,7 +5933,7 @@
 			)
 		)
 		(property "Value" "HB9500M-9.5-6P"
-			(at 205.7399 104.14 90)
+			(at 233.934 144.272 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5776,7 +5942,7 @@
 			)
 		)
 		(property "Footprint" "Samacsys:HB9500M956P"
-			(at 210.82 202.87 0)
+			(at 231.14 224.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5786,7 +5952,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/1912251712_Ningbo-Kangnex-Elec-HB9500M-9-5-6P_C162699.pdf"
-			(at 210.82 302.87 0)
+			(at 231.14 324.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5796,7 +5962,7 @@
 			)
 		)
 		(property "Description" "Barrier Block 6 6 0.374\"(9.50mm) 12-22 AWG P=9.5mm"
-			(at 194.31 107.95 0)
+			(at 214.63 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5805,7 +5971,7 @@
 			)
 		)
 		(property "Height" "16.95"
-			(at 210.82 502.87 0)
+			(at 231.14 524.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5815,7 +5981,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Ningbo Kangnex"
-			(at 210.82 602.87 0)
+			(at 231.14 624.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5825,7 +5991,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "HB9500M-9.5-6P"
-			(at 210.82 702.87 0)
+			(at 231.14 724.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5835,7 +6001,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 210.82 802.87 0)
+			(at 231.14 824.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5845,7 +6011,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 210.82 902.87 0)
+			(at 231.14 924.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5855,7 +6021,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 210.82 1002.87 0)
+			(at 231.14 1024.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5865,7 +6031,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 210.82 1102.87 0)
+			(at 231.14 1124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5893,6 +6059,12 @@
 			(uuid "71cd18c3-cd88-4de3-a6e4-b7216863d46e")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "J1")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "J2")
@@ -5902,46 +6074,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:SANYOU_SRD_Form_C")
-		(at 83.82 129.54 0)
+		(lib_id "Device:R_Small")
+		(at 27.94 160.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4cf4b0b3-5a4d-4a32-b125-f3d018e5d98c")
-		(property "Reference" "K4"
-			(at 95.25 128.2699 0)
+		(uuid "4be0b15d-cb93-4631-a368-24aee95c3ad5")
+		(property "Reference" "R13"
+			(at 27.94 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SANYOU_SRD_Form_C"
-			(at 95.25 130.8099 0)
+		(property "Value" "2.2k"
+			(at 27.94 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
-			(at 95.25 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
-			(at 83.82 129.54 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5949,8 +6108,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
-			(at 83.82 129.54 0)
+		(property "Datasheet" "~"
+			(at 27.94 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5958,25 +6117,31 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "9edc27cd-643b-46c2-ae38-ca4aed00ec90")
-		)
-		(pin "1"
-			(uuid "4e9ad279-68d2-48cd-9b36-829ce08ea2c2")
-		)
-		(pin "5"
-			(uuid "4a776e56-c800-45f4-8f50-590b95d4ab2a")
-		)
-		(pin "4"
-			(uuid "817c3314-6070-4bcf-a53b-ea26d9b086b0")
+		(property "Description" "Resistor, small symbol"
+			(at 27.94 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "3e156c85-0465-480b-b618-4cf19873ba91")
+			(uuid "b9838467-4eef-4c70-8373-7566f51280f6")
+		)
+		(pin "1"
+			(uuid "7d5bda6c-4322-4398-b4ae-fa001421a269")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R5")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "K4")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -6050,6 +6215,12 @@
 			(uuid "01cc6fe9-ffd8-4e00-ac42-1cfe1cea7803")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "Q3")
@@ -6059,8 +6230,156 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 58.42 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "53ddc09e-c20c-498f-b6a0-141871922bf5")
+		(property "Reference" "R14"
+			(at 58.42 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 58.42 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 58.42 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 58.42 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b47aaffe-3d50-4b00-9f39-64f045246793")
+		)
+		(pin "1"
+			(uuid "e2f8dfcb-0a02-4cdb-841b-852837c7a87d")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 97.79 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5418167e-51c7-41eb-8e8b-e6da5d56e5e8")
+		(property "Reference" "R28"
+			(at 97.79 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 97.79 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 97.79 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cd369e02-5475-4e92-803f-1b8b29dd70b0")
+		)
+		(pin "1"
+			(uuid "2a9f8690-b1f2-4014-9204-77b97cd29737")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 163.83 115.57 0)
+		(at 163.83 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6069,7 +6388,7 @@
 		(fields_autoplaced yes)
 		(uuid "561a14e7-25d2-431e-9126-9ee2628fe25d")
 		(property "Reference" "#PWR017"
-			(at 163.83 121.92 0)
+			(at 163.83 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6078,7 +6397,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 120.65 0)
+			(at 163.83 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6086,7 +6405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 115.57 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6095,7 +6414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 115.57 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6104,7 +6423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 115.57 0)
+			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6116,6 +6435,12 @@
 			(uuid "5515d04c-fe52-423a-b30b-90355275d4d5")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR017")
@@ -6125,42 +6450,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148W")
-		(at 67.31 129.54 270)
+		(lib_id "Device:R_Small")
+		(at 139.7 128.27 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "588e36d7-3bc0-4b2c-b9f0-a90b083cd66a")
-		(property "Reference" "D7"
-			(at 60.96 129.54 0)
+		(uuid "593c7dd2-506b-49a1-8d01-38809f444744")
+		(property "Reference" "R31"
+			(at 134.62 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1N4148W"
-			(at 63.5 129.54 0)
+		(property "Value" "1k"
+			(at 137.16 128.27 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 62.865 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
-			(at 67.31 129.54 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 139.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6168,8 +6484,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
-			(at 67.31 129.54 0)
+		(property "Datasheet" "~"
+			(at 139.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6177,17 +6493,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "D"
-			(at 67.31 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 67.31 129.54 0)
+		(property "Description" "Resistor, small symbol"
+			(at 139.7 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6196,82 +6503,21 @@
 			)
 		)
 		(pin "2"
-			(uuid "342e12c8-6b04-47c8-b574-f0a0efd5649e")
+			(uuid "206968d7-3994-49c3-b792-e81195ce1888")
 		)
 		(pin "1"
-			(uuid "02214b8a-4d82-4ed8-987c-d1709e650f04")
+			(uuid "c3fe7ce3-2826-46da-88d4-e27d087f6fb5")
 		)
 		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "D7")
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R4")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 63.5 120.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ab1b48e-38e1-4f21-814b-4383b26a6821")
-		(property "Reference" "#PWR05"
-			(at 67.31 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 59.69 120.6499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 63.5 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "784c0078-ea73-4894-98bb-da19bb38f3f5")
-		)
-		(instances
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "#PWR05")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -6336,6 +6582,12 @@
 			(uuid "3449e2ef-869c-433d-b6a0-9e007647e501")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR03")
@@ -6404,6 +6656,12 @@
 			(uuid "2f927bdf-7133-4b8f-994b-349d7f08fb7a")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D6")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "D3")
@@ -6413,17 +6671,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 64.77 146.05 0)
+		(lib_id "Transistor_BJT:BC807")
+		(at 111.76 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5eff9dde-ccea-4adf-9233-639153f0f137")
-		(property "Reference" "Q5"
-			(at 69.85 144.7799 0)
+		(uuid "5c2a4f10-9b6e-4a40-965e-264a02151025")
+		(property "Reference" "Q6"
+			(at 116.84 126.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,8 +6689,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2N222"
-			(at 69.85 147.3199 0)
+		(property "Value" "S8550"
+			(at 116.84 129.5399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6440,8 +6698,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L"
-			(at 69.85 147.955 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 116.84 130.175 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6451,8 +6709,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
-			(at 64.77 146.05 0)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC808-D.pdf"
+			(at 111.76 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6461,8 +6719,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 64.77 146.05 0)
+		(property "Description" "0.8A Ic, 45V Vce, PNP Transistor, SOT-23"
+			(at 111.76 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6471,85 +6729,24 @@
 			)
 		)
 		(pin "3"
-			(uuid "fad71a3d-6dc9-4014-b754-1e5969bb05a5")
-		)
-		(pin "2"
-			(uuid "8e3c0888-f21d-49f2-8ce4-18c05c671c21")
+			(uuid "2254e14d-0969-47f4-a94b-5e13639354ca")
 		)
 		(pin "1"
-			(uuid "d0f869d1-54b8-43cc-9ce9-931bfbfa3ac1")
+			(uuid "644bc776-12dd-44fe-b086-8bb5b5ae4616")
+		)
+		(pin "2"
+			(uuid "804b1355-0787-4f7c-9975-0014e68224dd")
 		)
 		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "Q5")
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 62.23 158.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60fb1089-0b09-4828-b2a9-d6904e33c54d")
-		(property "Reference" "#PWR04"
-			(at 66.04 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 58.42 158.7499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 62.23 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "add6d78c-8314-439f-998e-84050f8e5ff9")
-		)
-		(instances
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "#PWR04")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -6613,6 +6810,12 @@
 			(uuid "ffd390f4-1e26-413f-ba9d-a71d1bbad2ca")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR015")
@@ -6681,6 +6884,12 @@
 			(uuid "7e8a5701-5a83-42b9-a2ee-197202a1926f")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R11")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R9")
@@ -6748,6 +6957,12 @@
 			(uuid "a5938e90-c0c2-4f7a-86ec-7869868f8243")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR012")
@@ -6764,10 +6979,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "694a60d9-e8aa-445f-a454-26e78ea1063d")
 		(property "Reference" "J1"
-			(at 207.0099 38.1 90)
+			(at 215.138 57.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6776,7 +6990,7 @@
 			)
 		)
 		(property "Value" "HB9500M-9.5-6P"
-			(at 209.5499 38.1 90)
+			(at 217.678 57.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6902,9 +7116,89 @@
 			(uuid "ca9da970-65b6-4311-a8dc-0e6c1a23a9f5")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "J2")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 67.31 160.02 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bffab5c-672c-4839-9ddf-96a866e411c7")
+		(property "Reference" "R16"
+			(at 67.31 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 67.31 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 67.31 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 67.31 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "401975eb-db5a-43dd-b61d-7781837b71d9")
+		)
+		(pin "1"
+			(uuid "f52a3cdc-c36a-4667-b71b-e2e5a1af7380")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -6969,6 +7263,12 @@
 			(uuid "b42b5029-bdb8-48a9-a7b7-43bbcc11e684")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR011")
@@ -6978,33 +7278,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 57.15 165.1 180)
+		(lib_id "power:+5V")
+		(at 21.59 160.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6d8f3fe1-5825-4ff4-8caf-7096b676b416")
-		(property "Reference" "R16"
-			(at 52.07 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 54.61 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 57.15 165.1 0)
+		(uuid "6f2e56c7-4496-4aa9-af69-efdb4490224f")
+		(property "Reference" "#PWR04"
+			(at 25.4 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7012,69 +7296,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 57.15 165.1 0)
+		(property "Value" "+5V"
+			(at 17.78 160.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 57.15 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d7464e79-1f2f-4677-b71a-41c8dc8de770")
-		)
-		(pin "1"
-			(uuid "34d0119b-b157-42ed-950e-b6c8672a603f")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 64.77 153.67 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74247a03-2e65-4453-8bb5-99b55ce5abd5")
-		(property "Reference" "#PWR07"
-			(at 58.42 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 60.96 153.6699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 153.67 0)
+			(at 21.59 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7083,7 +7315,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 153.67 0)
+			(at 21.59 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7091,8 +7323,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 64.77 153.67 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 21.59 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7101,67 +7333,71 @@
 			)
 		)
 		(pin "1"
-			(uuid "5db21052-fc56-4ec4-8235-67a3fe8a58f3")
+			(uuid "4c966451-f64a-43b3-9fe8-5e4accf20ef2")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "#PWR07")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Samacsys:HB9500M-9.5-3P")
-		(at 175.26 152.4 0)
+		(lib_id "Isolator:FODM217A")
+		(at 40.64 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "81eaaab0-0efb-40c1-8219-05ffbeec8957")
-		(property "Reference" "J4"
-			(at 191.77 153.6699 0)
+		(uuid "770bf6bf-45d8-47ee-ae90-70a840a08b0d")
+		(property "Reference" "U9"
+			(at 40.64 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FODM217A"
+			(at 40.64 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 40.64 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FODM214-D.PDF"
+			(at 40.64 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Value" "HB9500M-9.5-3P"
-			(at 191.77 156.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Samacsys:HB9500M953P"
-			(at 191.77 247.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/Ningbo-Kangnex-Elec-HB9500-3_C162697.pdf"
-			(at 191.77 347.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Barrier Block 3 3 0.374\"(9.50mm) 12-22 AWG P=9.5mm Barrier Terminal Blocks"
-			(at 175.26 152.4 0)
+		(property "Description" "DC Optocoupler, Vce 80V, CTR 80-160%, SOP-4"
+			(at 40.64 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7169,89 +7405,28 @@
 				(hide yes)
 			)
 		)
-		(property "Height" "13.2"
-			(at 191.77 547.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Ningbo Kangnex"
-			(at 191.77 647.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "HB9500M-9.5-3P"
-			(at 191.77 747.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 191.77 847.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 191.77 947.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 191.77 1047.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 191.77 1147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
+		(pin "4"
+			(uuid "d1fd0cd9-40f4-404a-9c0b-d7e8ea202dd2")
 		)
 		(pin "2"
-			(uuid "6f5d80aa-88a3-4df5-9b10-7561ec0df13f")
-		)
-		(pin "1"
-			(uuid "33278e50-0ef5-4f0c-9adf-7ce5cf20794b")
+			(uuid "a46d8bda-344b-40f6-8d03-188256905e48")
 		)
 		(pin "3"
-			(uuid "9daecafa-89af-4747-b12d-112f99ba9ce4")
+			(uuid "4aa0f8d9-ee68-4b1e-8e03-8522594c4a78")
+		)
+		(pin "1"
+			(uuid "9944bc69-8c20-4984-bbcc-4e829b442e28")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "U2")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "J4")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -7259,24 +7434,24 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 53.34 146.05 90)
+		(at 109.22 160.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8623aaf4-1f23-40be-8c11-d3616700ed72")
-		(property "Reference" "R13"
-			(at 53.34 140.97 90)
+		(uuid "7abc712c-7052-4819-9dd1-faf24b894f35")
+		(property "Reference" "R30"
+			(at 104.14 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "2.2k"
-			(at 53.34 143.51 90)
+		(property "Value" "1k"
+			(at 106.68 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7284,7 +7459,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 53.34 146.05 0)
+			(at 109.22 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7293,7 +7468,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 146.05 0)
+			(at 109.22 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7302,7 +7477,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 53.34 146.05 0)
+			(at 109.22 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7311,15 +7486,21 @@
 			)
 		)
 		(pin "2"
-			(uuid "7fb4fcc6-7a76-401e-92b9-8f9f444e5dc9")
+			(uuid "dd8420eb-04c4-4597-9375-44fc4a7a0532")
 		)
 		(pin "1"
-			(uuid "12c25e34-65a7-46e9-abdc-a44477ef990c")
+			(uuid "bb877d4d-31ac-4163-b641-ad00fa8838b3")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R8")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "R13")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -7384,77 +7565,15 @@
 			(uuid "025dedae-713d-4aa0-8b96-cfed6a148a7f")
 		)
 		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "#PWR010")
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 58.42 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "90eff229-a88f-4329-9b26-7dce9388b515")
-		(property "Reference" "D10"
-			(at 52.07 134.9375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 54.61 134.9375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 58.42 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 58.42 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f1f22d3-1e03-461f-8db7-2f8b92d617f5")
-		)
-		(pin "2"
-			(uuid "56699d2c-2e46-43dc-a702-f78babd446df")
-		)
-		(instances
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "D10")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -7520,6 +7639,12 @@
 			(uuid "de14240e-ff49-45c0-8141-9f3667aadb26")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R18")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R4")
@@ -7606,9 +7731,88 @@
 			(uuid "6c2fa16c-6554-4a17-9346-460c83e4b17f")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D10")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 165.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ad274bb-f2d0-46e5-82e2-5c08521f7c24")
+		(property "Reference" "#PWR05"
+			(at 57.15 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 165.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1761ef1f-2cff-47f2-bd98-c0713538995c")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -7674,6 +7878,12 @@
 			(uuid "a03be3a3-e6ab-4f2e-8b82-523f1e13866e")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R20")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R12")
@@ -7683,17 +7893,56 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 63.5 191.77 270)
+		(lib_id "Transistor_BJT:BC807")
+		(at 81.28 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9d750764-6a87-4284-810a-027c9739d247")
-		(property "Reference" "#PWR06"
-			(at 57.15 191.77 0)
+		(uuid "9f5c8e41-eed0-4215-aaf6-d19067434794")
+		(property "Reference" "Q5"
+			(at 86.36 158.7499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S8550"
+			(at 86.36 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 86.36 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC808-D.pdf"
+			(at 81.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.8A Ic, 45V Vce, PNP Transistor, SOT-23"
+			(at 81.28 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7701,49 +7950,99 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 59.69 191.7699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "15f0d640-63c9-406c-a32e-d4baa1ac67f7")
 		)
 		(pin "1"
-			(uuid "1d0cb1ca-0883-47cf-b8b3-cf4c9faaaa61")
+			(uuid "52aaf5a0-1536-4291-b98c-465eb8057526")
+		)
+		(pin "2"
+			(uuid "f415e26a-cb50-419a-b6b5-a1dfb3367470")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "#PWR06")
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 67.31 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f7b1c76-2947-4d20-bb52-e8fdf655a593")
+		(property "Reference" "R17"
+			(at 67.31 163.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 67.31 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 67.31 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 67.31 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d812a4a2-5dbe-4017-b34b-60deb272d656")
+		)
+		(pin "1"
+			(uuid "29d2bb2b-1ed2-417d-ae27-695c660110d9")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -7809,6 +8108,12 @@
 			(uuid "004eec53-cbf3-4f5a-b18c-e1ff3086f3cf")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D5")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "D2")
@@ -7876,6 +8181,12 @@
 			(uuid "314fd5df-8294-4319-a31f-78c426cfe88a")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR02")
@@ -7944,9 +8255,163 @@
 			(uuid "eb918f91-9ea7-4af3-bf88-90b88641d727")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R13")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 109.22 166.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae776cc6-be39-4548-9437-f8718946ab38")
+		(property "Reference" "D7"
+			(at 102.87 167.9575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 105.41 167.9575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 109.22 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 109.22 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5b6d386-862f-4762-9669-267ba7fc5d0a")
+		)
+		(pin "2"
+			(uuid "fb44fc0c-d348-448f-9539-f3ea9275cb69")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 139.7 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6ae66ae-c98d-4228-9f36-3e483b175551")
+		(property "Reference" "D9"
+			(at 133.35 136.2075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 135.89 136.2075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 139.7 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 139.7 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab813493-a4b4-4fe1-b874-972d94ca45d5")
+		)
+		(pin "2"
+			(uuid "4b091ef3-2559-4248-95de-0fff56f91f15")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -8029,6 +8494,12 @@
 			(uuid "8c9d157a-ec5b-4d67-a377-02907ad32294")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "K3")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "K2")
@@ -8038,33 +8509,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148W")
-		(at 66.04 167.64 270)
+		(lib_id "Isolator:FODM217A")
+		(at 71.12 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bd35a293-e580-40d9-9f35-e1b8976a564e")
-		(property "Reference" "D8"
-			(at 59.69 167.64 0)
+		(uuid "beef4e8e-9aa1-46b6-85a2-f4cbf0919780")
+		(property "Reference" "U10"
+			(at 71.12 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1N4148W"
-			(at 62.23 167.64 0)
+		(property "Value" "FODM217A"
+			(at 71.12 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 61.595 167.64 0)
+		(property "Footprint" "Package_SO:SOP-4_4.4x2.6mm_P1.27mm"
+			(at 71.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/FODM214-D.PDF"
+			(at 71.12 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC Optocoupler, Vce 80V, CTR 80-160%, SOP-4"
+			(at 71.12 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8072,52 +8563,28 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
-			(at 66.04 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
-			(at 66.04 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 66.04 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 66.04 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "4"
+			(uuid "4f464a93-3d52-4887-aecd-6f3112837b3e")
 		)
 		(pin "2"
-			(uuid "dc2d66b7-af87-49ba-ad45-9b3602fdd9a9")
+			(uuid "384ecdaa-4400-48ba-a80e-b0b231321836")
+		)
+		(pin "3"
+			(uuid "7c8a9592-806b-4461-aa81-76298f75c2ab")
 		)
 		(pin "1"
-			(uuid "5e7d04c9-6c25-42cb-99be-9ed69e38ddc5")
+			(uuid "39e9ff24-ff96-40ef-b0ba-70c8dffbd3dd")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "U1")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "D8")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -8183,6 +8650,12 @@
 			(uuid "2656ced5-c3df-47c8-b7f5-ed448cd2ea57")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R10")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R5")
@@ -8251,6 +8724,12 @@
 			(uuid "42bd41cb-f0ee-4582-b23d-015a81632311")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D7")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "D5")
@@ -8261,16 +8740,15 @@
 	)
 	(symbol
 		(lib_id "Samacsys:HB9500M-9.5-6P")
-		(at 139.7 151.13 0)
+		(at 214.63 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c57c11fb-81f4-460a-b164-ddb2fcdca729")
 		(property "Reference" "J3"
-			(at 148.5899 147.32 90)
+			(at 231.902 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8279,7 +8757,7 @@
 			)
 		)
 		(property "Value" "HB9500M-9.5-6P"
-			(at 151.1299 147.32 90)
+			(at 234.442 163.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8288,7 +8766,7 @@
 			)
 		)
 		(property "Footprint" "Samacsys:HB9500M956P"
-			(at 156.21 246.05 0)
+			(at 231.14 243.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8298,7 +8776,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheet.lcsc.com/szlcsc/1912251712_Ningbo-Kangnex-Elec-HB9500M-9-5-6P_C162699.pdf"
-			(at 156.21 346.05 0)
+			(at 231.14 343.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8308,7 +8786,7 @@
 			)
 		)
 		(property "Description" "Barrier Block 6 6 0.374\"(9.50mm) 12-22 AWG P=9.5mm"
-			(at 139.7 151.13 0)
+			(at 214.63 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8317,7 +8795,7 @@
 			)
 		)
 		(property "Height" "16.95"
-			(at 156.21 546.05 0)
+			(at 231.14 543.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8327,7 +8805,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Ningbo Kangnex"
-			(at 156.21 646.05 0)
+			(at 231.14 643.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8337,7 +8815,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "HB9500M-9.5-6P"
-			(at 156.21 746.05 0)
+			(at 231.14 743.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8347,7 +8825,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 156.21 846.05 0)
+			(at 231.14 843.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8357,7 +8835,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 156.21 946.05 0)
+			(at 231.14 943.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8367,7 +8845,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 156.21 1046.05 0)
+			(at 231.14 1043.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8377,7 +8855,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 156.21 1146.05 0)
+			(at 231.14 1143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8405,9 +8883,89 @@
 			(uuid "69f297f4-8550-4a5e-a4bc-bd20a119d6ec")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "J3")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 97.79 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c728881c-b58e-429b-8038-b179d4711a9e")
+		(property "Reference" "R29"
+			(at 97.79 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 97.79 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 97.79 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 97.79 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3ea9a207-d0e3-47ed-bc49-4c85bf1e6a3d")
+		)
+		(pin "1"
+			(uuid "c3e7cb4f-5a52-4d49-ac7b-cfcd7c486dcb")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -8481,9 +9039,160 @@
 			(uuid "93441f64-6701-43a9-8384-a196ae9bfdfe")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 140.97 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cbeddb53-429c-4fbe-b36f-9132c41d298f")
+		(property "Reference" "#PWR066"
+			(at 140.97 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.97 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 140.97 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44375e3b-8187-4ba7-8b42-24f230173381")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 52.07 128.27 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ccd2f2f5-9916-44a9-a657-f1580d802306")
+		(property "Reference" "#PWR06"
+			(at 55.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 48.26 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 52.07 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "079676d7-9541-4841-a095-e20112b22a41")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -8549,6 +9258,12 @@
 			(uuid "1c648cc7-cc3e-4ee5-a3c4-7f917f54766b")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R19")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R8")
@@ -8625,6 +9340,12 @@
 			(uuid "a187aacb-700b-4c2a-9edd-c9915aedaa04")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "Q1")
@@ -8634,33 +9355,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 52.07 184.15 90)
+		(lib_id "power:+5V")
+		(at 88.9 168.91 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dca86246-1d91-40e3-9869-569b31d39755")
-		(property "Reference" "R14"
-			(at 52.07 179.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.2k"
-			(at 52.07 181.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 52.07 184.15 0)
+		(uuid "dd38d3cb-684b-4066-80d0-163d2b9a7a97")
+		(property "Reference" "#PWR063"
+			(at 85.09 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8668,8 +9373,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 52.07 184.15 0)
+		(property "Value" "+5V"
+			(at 92.71 168.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8677,8 +9391,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 52.07 184.15 0)
+		(property "Datasheet" ""
+			(at 88.9 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8686,72 +9400,61 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "42e6db44-bd7c-4db4-b104-0558fdd34a9e")
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 88.9 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "15bd56ec-2aa4-421b-8d62-9d70021937d6")
+			(uuid "d62aaceb-afb2-45bf-9502-1566a9206a67")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "R14")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 63.5 184.15 0)
+		(lib_id "Diode:1N4148W")
+		(at 149.86 134.62 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e0b6cfdc-e54e-4322-843f-4500acfd4e05")
-		(property "Reference" "Q6"
-			(at 68.58 182.8799 0)
+		(uuid "de3ef560-ff75-4e1d-b2b8-201e73bf2306")
+		(property "Reference" "D10"
+			(at 143.51 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "2N222"
-			(at 68.58 185.4199 0)
+		(property "Value" "1N4148W"
+			(at 146.05 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92L"
-			(at 68.58 186.055 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
-			(at 63.5 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 63.5 184.15 0)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 145.415 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8759,19 +9462,130 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "1359ca2d-7e45-4bb7-af84-94d09866f558")
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 149.86 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 149.86 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 149.86 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 149.86 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "83f4eecd-5946-452b-9dbf-4a3b3f96116d")
+			(uuid "49d54867-76b0-4690-bf90-e9f0e65ea70a")
 		)
 		(pin "1"
-			(uuid "ccc41faa-fb05-412d-a2cd-22ba701b08e8")
+			(uuid "c6c36fba-9093-4734-b342-cd1783d49848")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "D2")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "Q6")
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 133.35 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0d00621-ea26-4374-8ce7-baba3f8d339d")
+		(property "Reference" "#PWR065"
+			(at 133.35 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8fe53ea8-3f3a-4da6-adac-b7718d2e3486")
+		)
+		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -8845,6 +9659,12 @@
 			(uuid "7898a4d1-2973-4276-bade-88c828938012")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "U3")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "U1")
@@ -8930,6 +9750,12 @@
 			(uuid "60599dff-2963-41af-8193-4d3648665193")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "K2")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "K1")
@@ -8997,6 +9823,12 @@
 			(uuid "239dfffc-ce37-430f-a2cd-8ecac0a7c726")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "#PWR09")
@@ -9073,89 +9905,15 @@
 			(uuid "581f96fc-4295-4ef8-a1fe-27735ae88f3d")
 		)
 		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "U2")
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "U4")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Relay:SANYOU_SRD_Form_C")
-		(at 82.55 167.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f19b7014-7766-4400-938d-ce76e37c8982")
-		(property "Reference" "K5"
-			(at 93.98 166.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SANYOU_SRD_Form_C"
-			(at 93.98 168.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Relay_THT:Relay_SPDT_SANYOU_SRD_Series_Form_C"
-			(at 93.98 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf"
-			(at 82.55 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Sanyo SRD relay, Single Pole Miniature Power Relay,"
-			(at 82.55 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "ef79306a-4936-4cce-af9c-deb4834f4bc9")
-		)
-		(pin "1"
-			(uuid "cffab713-246e-458f-81c6-18d81cf8ef4b")
-		)
-		(pin "5"
-			(uuid "91c4fda8-7530-4278-a27f-c7b3673dcdff")
-		)
-		(pin "4"
-			(uuid "299f7d22-5d4b-43f1-bb4b-ec28f5443b02")
-		)
-		(pin "2"
-			(uuid "abb72635-1d1f-427d-8c7e-7d5857e7b43b")
-		)
-		(instances
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
-					(reference "K5")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -9238,6 +9996,12 @@
 			(uuid "d0d8bc0f-17f7-4829-a507-06b6676facff")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "K4")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "K3")
@@ -9306,6 +10070,12 @@
 			(uuid "5bd75b65-0db8-49ca-8f19-65bcc2d4c594")
 		)
 		(instances
+			(project "relay"
+				(path "/6c4ee58a-c802-47e1-bc85-df0c3bc72379"
+					(reference "R9")
+					(unit 1)
+				)
+			)
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/7045d560-d6b8-4d9e-8b8f-b644b04ab2cf"
 					(reference "R3")
@@ -9314,4 +10084,10 @@
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )

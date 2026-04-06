@@ -1928,6 +1928,24 @@
 		(color 0 0 0 0)
 		(uuid "d1943a0e-5624-4b40-ae95-edf6a1f83871")
 	)
+	(no_connect
+		(at 114.3 43.18)
+		(uuid "94106762-bcc9-4014-9adc-38a2639cfd3a")
+	)
+	(no_connect
+		(at 114.3 48.26)
+		(uuid "ae730ef4-e830-491e-a2af-086f6bd80649")
+	)
+	(wire
+		(pts
+			(xy 129.54 43.18) (xy 142.24 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "048494de-618d-4f8c-9ff4-95719fc20ca7")
+	)
 	(wire
 		(pts
 			(xy 179.07 49.53) (xy 186.69 49.53)
@@ -1950,16 +1968,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 48.26) (xy 142.24 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24ba6f73-232b-4d50-b710-bd4703911f3e")
-	)
-	(wire
-		(pts
 			(xy 179.07 41.91) (xy 179.07 43.18)
 		)
 		(stroke
@@ -1967,16 +1975,6 @@
 			(type default)
 		)
 		(uuid "33f92085-3b15-41ad-80a2-f2b87969890e")
-	)
-	(wire
-		(pts
-			(xy 139.7 43.18) (xy 142.24 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "405475f7-1750-41fd-a705-eb93aef05430")
 	)
 	(wire
 		(pts
@@ -2100,6 +2098,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 48.26) (xy 142.24 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e329c950-99fd-4ff5-8dde-6fb001893d49")
+	)
+	(wire
+		(pts
 			(xy 172.72 49.53) (xy 179.07 49.53)
 		)
 		(stroke
@@ -2173,76 +2181,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 114.3 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07fcd6f8-0fa0-4244-9239-63f684a18e01")
-		(property "Reference" "C2"
-			(at 116.84 44.4562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF/275V"
-			(at 116.84 46.9962 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 114.3 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 114.3 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ce6ab710-192c-4a30-a9e3-84dcd926a7a0")
-		)
-		(pin "1"
-			(uuid "95ec900c-8bf0-4e45-8d99-01619ef74974")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 179.07 45.72 0)
 		(unit 1)
@@ -2307,6 +2245,12 @@
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "power-supply"
+				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -2377,6 +2321,12 @@
 					(unit 1)
 				)
 			)
+			(project "power-supply"
+				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2441,6 +2391,12 @@
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+			(project "power-supply"
+				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -2638,20 +2594,26 @@
 					(unit 1)
 				)
 			)
+			(project "power-supply"
+				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
+					(reference "PS1")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Device:Filter_EMI_CommonMode")
-		(at 134.62 45.72 0)
+		(at 135.89 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "aafd3391-28f0-4b89-ad22-872ecb29937c")
 		(property "Reference" "FL1"
-			(at 134.239 38.1 0)
+			(at 135.509 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2659,7 +2621,7 @@
 			)
 		)
 		(property "Value" "Filter_EMI_CommonMode"
-			(at 134.239 40.64 0)
+			(at 135.509 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2667,7 +2629,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_THT:L_CommonMode_PulseElectronics_PH9455x105NL_1"
-			(at 134.62 44.704 0)
+			(at 135.89 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2676,7 +2638,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 44.704 0)
+			(at 135.89 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2685,7 +2647,7 @@
 			)
 		)
 		(property "Description" "EMI 2-inductor common mode filter"
-			(at 134.62 45.72 0)
+			(at 135.89 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2824,6 +2786,82 @@
 			(project "Saunasteuerung-ESP-Home"
 				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
 					(reference "RV1")
+					(unit 1)
+				)
+			)
+			(project "power-supply"
+				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 114.3 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "d732b2c2-991a-4c56-8264-c25b6a23906b")
+		(property "Reference" "C2"
+			(at 116.84 31.7562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF/275V"
+			(at 116.84 34.2962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "083feab9-8800-445b-9e63-18513255916b")
+		)
+		(pin "1"
+			(uuid "373f0fb9-ec30-47dc-816b-2e2c6e18e4be")
+		)
+		(instances
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -3046,6 +3084,18 @@
 					(unit 1)
 				)
 			)
+			(project "power-supply"
+				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
+					(reference "J1")
+					(unit 1)
+				)
+			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
