@@ -859,6 +859,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Snapeda:696106003002"
 			(pin_names
 				(offset 1.016)
@@ -1905,28 +2091,28 @@
 		(uuid "6c323f5e-3180-42f4-868f-6fac1e510062")
 	)
 	(junction
-		(at 179.07 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8a272e9a-030a-47be-92c8-27c07f2d3f49")
-	)
-	(junction
-		(at 179.07 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6f91ff3-4344-41a5-8a9c-19c468339f28")
-	)
-	(junction
 		(at 114.3 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a92f7882-8385-4180-b670-62b53419b88e")
 	)
 	(junction
+		(at 196.85 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf0545f1-637c-40ed-994f-5799ae91a1e4")
+	)
+	(junction
 		(at 114.3 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1943a0e-5624-4b40-ae95-edf6a1f83871")
+	)
+	(junction
+		(at 196.85 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d81c9f7e-c907-4a34-a1e3-be7fa5afb54c")
 	)
 	(no_connect
 		(at 114.3 43.18)
@@ -1935,6 +2121,16 @@
 	(no_connect
 		(at 114.3 48.26)
 		(uuid "ae730ef4-e830-491e-a2af-086f6bd80649")
+	)
+	(wire
+		(pts
+			(xy 196.85 41.91) (xy 196.85 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024700c5-a0e4-4d02-a274-2ac2ddfa6927")
 	)
 	(wire
 		(pts
@@ -1948,16 +2144,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 49.53) (xy 186.69 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a84b395-34d9-49e5-afb2-319c12befadd")
-	)
-	(wire
-		(pts
 			(xy 114.3 41.91) (xy 114.3 43.18)
 		)
 		(stroke
@@ -1965,16 +2151,6 @@
 			(type default)
 		)
 		(uuid "0ced01b4-2827-4b39-937c-c64c94d91922")
-	)
-	(wire
-		(pts
-			(xy 179.07 41.91) (xy 179.07 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33f92085-3b15-41ad-80a2-f2b87969890e")
 	)
 	(wire
 		(pts
@@ -1998,6 +2174,26 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 49.53) (xy 196.85 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fb04533-b3ba-4312-ab1f-6f05be72ed63")
+	)
+	(wire
+		(pts
+			(xy 172.72 49.53) (xy 181.61 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59423a19-eb23-4d5a-a3bd-cdb2ff32f761")
+	)
+	(wire
+		(pts
 			(xy 114.3 48.26) (xy 114.3 49.53)
 		)
 		(stroke
@@ -2015,6 +2211,16 @@
 			(type default)
 		)
 		(uuid "66063514-7cbe-4a01-95f4-1b7e37af83fc")
+	)
+	(wire
+		(pts
+			(xy 196.85 41.91) (xy 205.74 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e73920d-7962-4b26-b9a0-7f4685cc2338")
 	)
 	(wire
 		(pts
@@ -2038,7 +2244,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 41.91) (xy 179.07 41.91)
+			(xy 172.72 41.91) (xy 196.85 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2058,13 +2264,23 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 41.91) (xy 186.69 41.91)
+			(xy 196.85 49.53) (xy 204.47 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "990ce87b-1025-4b0e-9f1b-4ecce5a6ed1f")
+		(uuid "9204874d-4f24-4a80-a950-8750ec3fd6e6")
+	)
+	(wire
+		(pts
+			(xy 196.85 48.26) (xy 196.85 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adcc5c46-10da-441e-9afd-c4c778a58fd9")
 	)
 	(wire
 		(pts
@@ -2105,26 +2321,6 @@
 			(type default)
 		)
 		(uuid "e329c950-99fd-4ff5-8dde-6fb001893d49")
-	)
-	(wire
-		(pts
-			(xy 172.72 49.53) (xy 179.07 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8c8a487-33df-4029-a6ca-dc4210486509")
-	)
-	(wire
-		(pts
-			(xy 179.07 49.53) (xy 179.07 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc2dc378-90f6-44cd-a5e4-b1da5ccb8af1")
 	)
 	(wire
 		(pts
@@ -2181,157 +2377,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 179.07 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a29db37-ecb9-41c5-8605-d7a9f125e0f4")
-		(property "Reference" "C1"
-			(at 181.61 43.9038 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220uF"
-			(at 181.61 46.4438 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3.9"
-			(at 179.07 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 179.07 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "77b4c21f-8d73-4fa1-bfe7-cd43233ad38a")
-		)
-		(pin "1"
-			(uuid "79dfa08c-14a3-4e69-8769-83c5989f73e8")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "power-supply"
-				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 186.69 49.53 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c2627a0-c1e7-4fab-894b-1fa9e4fc6c74")
-		(property "Reference" "#PWR051"
-			(at 182.88 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 190.5 49.5299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 186.69 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "38e00a8a-ee0d-46f4-a7a1-1a1b9a9cc205")
-		)
-		(instances
-			(project "Saunasteuerung-ESP-Home"
-				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-			(project "power-supply"
-				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 186.69 41.91 90)
+		(at 205.74 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2340,7 +2387,7 @@
 		(fields_autoplaced yes)
 		(uuid "57e50810-e955-4a9a-93b7-28b2a9bfe9cd")
 		(property "Reference" "#PWR050"
-			(at 193.04 41.91 0)
+			(at 212.09 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,7 +2396,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 41.9099 90)
+			(at 209.55 41.9099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2358,7 +2405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 41.91 0)
+			(at 205.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2367,7 +2414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 41.91 0)
+			(at 205.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2376,7 +2423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 41.91 0)
+			(at 205.74 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2397,6 +2444,74 @@
 			(project "power-supply"
 				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 185.42 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cbd121f-3f68-493a-b1fa-602c1963814b")
+		(property "Reference" "JP3"
+			(at 185.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "psu disable"
+			(at 185.42 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "91aca57c-866c-494a-9747-ae7193dd5223")
+		)
+		(pin "1"
+			(uuid "94236458-373e-4b47-8516-f27f587793a0")
+		)
+		(instances
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -2798,6 +2913,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 204.47 49.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2f4df5b-1fe6-40ca-902e-9a4279f0b3f2")
+		(property "Reference" "#PWR018"
+			(at 200.66 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 208.28 49.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 204.47 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f18d28eb-e789-42c7-b05a-98ac6670d9c7")
+		)
+		(instances
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 114.3 33.02 0)
 		(unit 1)
@@ -3087,6 +3269,76 @@
 			(project "power-supply"
 				(path "/f6a42888-f9cb-481c-bc75-d972835775bc"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 196.85 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f52c60ea-512e-4abe-b58d-59f76b4103f2")
+		(property "Reference" "C1"
+			(at 199.39 44.996 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220uF"
+			(at 199.39 47.536 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x3.9"
+			(at 196.85 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 196.85 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c157f6ed-4d43-4f05-a58e-6003df0e714a")
+		)
+		(pin "1"
+			(uuid "4ad725fb-6d02-4ce5-b528-f1a86e69c4a7")
+		)
+		(instances
+			(project "Saunasteuerung-ESP-Home"
+				(path "/c2709fca-2df2-4b64-83dc-e0d31f28d840/23bb9531-753a-4bf2-b6f9-22c6f38d7367"
+					(reference "C1")
 					(unit 1)
 				)
 			)

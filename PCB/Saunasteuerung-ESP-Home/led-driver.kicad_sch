@@ -3461,6 +3461,28 @@
 			)
 		)
 	)
+	(global_label "WS2812-1.1"
+		(shape input)
+		(at 134.62 52.07 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0f0bb74c-b5a8-42af-858f-657ca09fdda2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.62 67.1503 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED2"
 		(shape input)
 		(at 168.91 76.2 90)
@@ -3545,28 +3567,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "WS2812"
-		(shape input)
-		(at 134.62 52.07 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dee6d105-1604-41a9-8ef1-0f581028c89f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.62 62.5541 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
